@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Project_Inventory/src/main/webapp/WEB-INF/includes&apos; to &apos;include&apos;" description="Rename resource &apos;includes&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/includes" name="include" stamp="1669802819685" updateReferences="true"/>
+</session>
