@@ -1,0 +1,5 @@
+package com.myProject.myapp.repair;
+
+public class RepairController {
+
+}

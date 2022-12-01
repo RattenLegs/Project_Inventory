@@ -23,7 +23,8 @@
 			<p>원하는 기능을 선택해주세요.</p>
 			<button onclick="location.href='www.naver.com'">재고관리</button>
 			<p>
-			<button onclick="location.href='../repairboard/repairList.jsp'">수선관리</button>
+			<button type="button" onclick="goRepairList();">수선관리</button>
+			<a href="<c:url value='repairList.jsp' />">오오</a>
 		</div>
 	</section>
 </body>
@@ -32,10 +33,8 @@
 
 <script>
 
-/* const $repairControl = document.getElementById('repairControl');
-
-$repairControl.addeventlistener('click', function(){
-	console.log('hello');
-}) */
+function goRepairList(){
+    location.href = "repairboard/repairList.jsp";
+}
 
 </script>
