@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>수유점 관리시스템에 오신걸 환영합니다.</title>
 
-<jsp:include page="../include/header.jsp" />
+ <%@ include file="../views/include/header.jsp" %>
 </head>
 <body>
 	<section>
@@ -19,22 +19,36 @@
 	</section>
 	<section>
 		<div style="text-align: center">
+			<%
+				java.util.Calendar cal = java.util.Calendar.getInstance();
+			%>
+			<p>
+			오늘은
+			<%=cal.get(java.util.Calendar.YEAR) %>년
+			<%=cal.get(java.util.Calendar.MONTH) %>월
+			<%=cal.get(java.util.Calendar.DATE) %>일
+			입니다.
+			</p>
+			<p>
+			현재 시간은 <%=new java.util.Date() %> 입니다. <!-- java.util.date 한글로 변환하기 -->
+			</p>
 			<P>현재 시간은 ${serverTime} 입니다.</P>
 			<p>원하는 기능을 선택해주세요.</p>
-			<button onclick="location.href='www.naver.com'">재고관리</button>
+			<button>재고관리</button>
 			<p>
 			<button type="button" onclick="goRepairList();">수선관리</button>
-			<a href="<c:url value='repairList.jsp' />">오오</a>
+			<a href="<c:url value='/repairboard/repairList' />">오오</a>
 		</div>
 	</section>
 </body>
-<jsp:include page="../include/footer.jsp" />
+	<%@ include file="../views/include/footer.jsp" %>
+	
 </html>
 
 <script>
 
 function goRepairList(){
-    location.href = "repairboard/repairList.jsp";
+    location.href = "../views/repairboard/repairList.jsp";
 }
 
 </script>

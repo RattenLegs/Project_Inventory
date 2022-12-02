@@ -172,10 +172,12 @@
 		</dependency>
 
 		<!-- Servlet -->
+		<!-- 서블릿을 윗 버전으로 업데이트 -->
+		<!-- 버전을 3.1.0으로, artifactId를 javax.servlet.api로 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
