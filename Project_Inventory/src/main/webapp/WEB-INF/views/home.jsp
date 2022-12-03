@@ -33,11 +33,12 @@
 			현재 시간은 <%=new java.util.Date() %> 입니다. <!-- java.util.date 한글로 변환하기 -->
 			</p>
 			<P>현재 시간은 ${serverTime} 입니다.</P>
+			<p>현재 총재고는 n족, 당일 입고는 m족, 당일 출고는 k족입니다.</p>
+			<p>총 수선재고는 n족입니다.</p>
 			<p>원하는 기능을 선택해주세요.</p>
-			<button>재고관리</button>
-			<p>
+			<button type="button" onclick="goInventoryList();">재고관리</button>
 			<button type="button" onclick="goRepairList();">수선관리</button>
-			<a href="<c:url value='/repairboard/repairList' />">오오</a>
+<%-- 			<a href="<c:url value='/repairboard/repairList' />">오오</a> --%>
 		</div>
 	</section>
 </body>
@@ -47,8 +48,12 @@
 
 <script>
 
+function goInventoryList(){
+    location.href = "/inventoryboard/inventoryList";
+}
+
 function goRepairList(){
-    location.href = "../views/repairboard/repairList.jsp";
+    location.href = "/repairboard/repairList";
 }
 
 </script>

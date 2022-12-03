@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RepairController {
 
 	
-	// return을 void로 설정하면 uri를 jsp forward할때 사용함
 
 	/*@RequestMapping("/board/list.do")
 		public String list() {
@@ -20,4 +19,11 @@ public class RepairController {
 	 * @RequestMapping(path = "/repairboard/repairList", method = RequestMethod.GET)
 	 * public String repairList() { return "redirect:/repairboard/repairList"; }
 	 */
+	
+	public RepairController(){
+		System.out.println("RepairController 생성");
+
+	}
+	@RequestMapping(path = "/repairboard/repairList", method = RequestMethod.GET)
+	  public String repairList() { return "/repairboard/repairList"; }
 }

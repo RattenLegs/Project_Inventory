@@ -1,0 +1,11 @@
+package com.myProject.myapp.inventory;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+public class inventoryController {
+
+	@RequestMapping(path = "/inventoryboard/inventoryList", method = RequestMethod.GET)
+	  public String repairList() { return "/inventoryboard/inventoryList"; }
+	
+}

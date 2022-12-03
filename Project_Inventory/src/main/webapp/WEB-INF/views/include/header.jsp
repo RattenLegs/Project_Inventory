@@ -41,8 +41,8 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="<c:url value='/' />">Main</a></li>
-                                <li><a href="<c:url value='/repairboard/repairList' />">자유게시판</a></li>
-                                <li><a href="<c:url value='/repairboard/repairList' />">재고관리</a></li>
+                                <li><a href="<c:url value='/freeboard/freeboard' />">자유게시판</a></li>
+                                <li><a href="<c:url value='/inventoryboard/inventoryList' />">재고관리</a></li>
                                 <li><a href="<c:url value='/repairboard/repairList' />">수선관리</a></li>
                                 <!-- 
 				<li><a href="#">강의</a></li>
