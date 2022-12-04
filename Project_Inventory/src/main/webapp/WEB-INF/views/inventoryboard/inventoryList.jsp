@@ -18,8 +18,16 @@
 	<section>
 		<div style="text-align: center">
 			<p>재고용 테이블이 등장할 예정</p>
-			<p>남화 여화 </p>
-			<p>디자인NO 색상 사이즈 수량 세일가 계 </p>
+			<p>남화 여화</p>
+			<p>디자인NO 색상 사이즈 수량 세일가 계</p>
+		</div>
+
+		<div>
+			<p>조회조건</p>
+			<p>조회</p>
+			<p><a href="<c:url value='/inventoryboard/addInventory' />">등록</a></p>
+			<p>수정</p>
+			<p>삭제</p>
 		</div>
 	</section>
 	<%@ include file="../../views/include/footer.jsp"%>

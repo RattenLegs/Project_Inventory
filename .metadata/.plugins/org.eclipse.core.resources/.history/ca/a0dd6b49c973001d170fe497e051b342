@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>addInventory</title>
+<%@ include file="../../views/include/header.jsp"%>
+</head>
+<body>
+	<p>우와 재고등록</p>
+	<p>우와 재고등록</p>
+	<p>우와 재고등록</p>
+	<p>우와 재고등록</p>
+
+	<form action="/inventory/inventoryList" method="post">
+	<fieldset>
+		<legend>등록 양식</legend>
+		<input type="checkbox" name="shoes" value="man"> 남화 &nbsp;
+		<input type="checkbox" name="shoes" value="woman"> 여화 &nbsp;
+		디자인NO 색상 사이즈 수량 세일가 계
+		
+		<input type="submit" value="확인">
+		
+	</fieldset>
+	
+	</form>
+	<%@ include file="../../views/include/footer.jsp"%>
+</body>
+</html>

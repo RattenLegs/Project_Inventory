@@ -24,6 +24,6 @@ public class RepairController {
 		System.out.println("RepairController 생성");
 
 	}
-	@RequestMapping(path = "/repairboard/repairList", method = RequestMethod.GET)
+	@RequestMapping(value = "/repairboard/repairList", method = RequestMethod.GET)
 	  public String repairList() { return "/repairboard/repairList"; }
 }
