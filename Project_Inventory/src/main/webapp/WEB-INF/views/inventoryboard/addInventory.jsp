@@ -13,7 +13,7 @@
 	<p>우와 재고등록</p>
 	<p>우와 재고등록</p>
 
-	<form action="/inventory/inventoryList" method="post">
+	<form action="/inventoryboard/inventoryList" method="post"><!-- form action: 도착할 url -->
 	<fieldset>
 		<legend>등록 양식</legend>
 		<p>
