@@ -8,6 +8,7 @@ public class AddInventoryVO {
 	private String size;
 	private String num;
 	private String price;
+	private String sum;
 	
 	public String getshoeGender() {
 		return shoeGender;
@@ -51,7 +52,12 @@ public class AddInventoryVO {
 	public void setsum(String sum) {
 		this.sum = sum;
 	}
-	private String sum;
+	@Override
+	public String toString() {
+		return "AddInventoryVO [shoeGender=" + shoeGender + ", design=" + design + ", color=" + color + ", size=" + size
+				+ ", num=" + num + ", price=" + price + ", sum=" + sum + "]";
+	}
+
 	
 	
 }
