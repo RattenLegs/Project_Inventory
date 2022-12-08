@@ -2,56 +2,56 @@ package com.myProject.myapp.inventory;
 
 public class AddInventoryVO {
 
-	private String addGender;
-	private String addDesign;
-	private String addColor;
-	private String addSize;
-	private String addNum;
-	private String addPrice;
+	private String shoeGender;
+	private String design;
+	private String color;
+	private String size;
+	private String num;
+	private String price;
 	
-	public String getAddGender() {
-		return addGender;
+	public String getshoeGender() {
+		return shoeGender;
 	}
-	public void setAddGender(String addGender) {
-		this.addGender = addGender;
+	public void setshoeGender(String shoeGender) {
+		this.shoeGender = shoeGender;
 	}
-	public String getAddDesign() {
-		return addDesign;
+	public String getdesign() {
+		return design;
 	}
-	public void setAddDesign(String addDesign) {
-		this.addDesign = addDesign;
+	public void setdesign(String design) {
+		this.design = design;
 	}
-	public String getAddColor() {
-		return addColor;
+	public String getcolor() {
+		return color;
 	}
-	public void setAddColor(String addColor) {
-		this.addColor = addColor;
+	public void setcolor(String color) {
+		this.color = color;
 	}
-	public String getAddSize() {
-		return addSize;
+	public String getsize() {
+		return size;
 	}
-	public void setAddSize(String addSize) {
-		this.addSize = addSize;
+	public void setsize(String size) {
+		this.size = size;
 	}
-	public String getAddNum() {
-		return addNum;
+	public String getnum() {
+		return num;
 	}
-	public void setAddNum(String addNum) {
-		this.addNum = addNum;
+	public void setnum(String num) {
+		this.num = num;
 	}
-	public String getAddPrice() {
-		return addPrice;
+	public String getprice() {
+		return price;
 	}
-	public void setAddPrice(String addPrice) {
-		this.addPrice = addPrice;
+	public void setprice(String price) {
+		this.price = price;
 	}
-	public String getAddSum() {
-		return addSum;
+	public String getsum() {
+		return sum;
 	}
-	public void setAddSum(String addSum) {
-		this.addSum = addSum;
+	public void setsum(String sum) {
+		this.sum = sum;
 	}
-	private String addSum;
+	private String sum;
 	
 	
 }

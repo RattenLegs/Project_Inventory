@@ -17,8 +17,8 @@
 	<fieldset>
 		<legend>등록 양식</legend>
 		<p>
-		<input type="checkbox" name="shoes" value="man"> 남화 &nbsp;
-		<input type="checkbox" name="shoes" value="woman"> 여화 &nbsp;
+		<input type="checkbox" name="shoeGender" value="man"> 남화 &nbsp;
+		<input type="checkbox" name="shoeGender" value="woman"> 여화 &nbsp;
 		<br>
 		# 디자인NO <input type="text" name="design" size="10"> <br> 
 		# 색상 <input type="text" name="color" size="10"> <br> 
