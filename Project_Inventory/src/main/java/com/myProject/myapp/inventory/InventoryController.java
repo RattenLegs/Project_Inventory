@@ -30,7 +30,7 @@ public class InventoryController {
 	}
 	
 	@PostMapping("/addInventoryCheck")
-	public ModelAndView addInventory(AddInventoryVO AddInventory) {
+	public ModelAndView addInventoryCheck(AddInventoryVO AddInventory) {
 		
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("shoeGender", AddInventory.getshoeGender());

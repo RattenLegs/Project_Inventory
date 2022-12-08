@@ -22,6 +22,15 @@
 			<p>수선용 테이블이 등장할 예정</p>
 			<p>번호 접수일 이름 연락처 디자인 내용 약속일 매장재고일 납품일 비고</p>
 		</div>
+		
+		<div>
+			<p>조회조건</p>
+			<p>조회</p>
+			<p><a href="<c:url value='/repairboard/addRepair'/>">등록</a></p>
+			<p>수정</p>
+			<p>삭제</p>
+		
+		</div>
 	</section>
 	<%@ include file="../../views/include/footer.jsp"%>
 </body>
