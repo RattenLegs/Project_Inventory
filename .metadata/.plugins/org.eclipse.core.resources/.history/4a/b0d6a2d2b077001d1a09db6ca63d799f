@@ -1,0 +1,6 @@
+package com.myProject.myapp.user;
+
+public class UserVO {
+	private String UserId;
+	private String UserPw;
+}
