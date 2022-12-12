@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="DBConnectionTest.connectTest" project="Project_Inventory" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="connectTest" classname="com.myProject.myapp.DBConnectionTest" time="0.307"/>
-</testrun>
