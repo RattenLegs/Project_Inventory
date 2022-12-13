@@ -1,0 +1,15 @@
+package com.myProject.myapp.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+@RequestMapping("/test")
+public class TestController {
+
+
+	@GetMapping("/testPage")
+	public void testPage(){
+		
+	}
+}

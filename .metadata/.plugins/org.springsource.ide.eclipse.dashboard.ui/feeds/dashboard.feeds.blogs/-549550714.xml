@@ -5,7 +5,30 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-08T11:00:00Z</updated>
+  <updated>2022-12-12T16:00:00Z</updated>
+  <entry>
+    <title>Spring Cloud Data Flow version 2.10.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/12/spring-cloud-data-flow-version-2-10-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Corneil du Plessis</name>
+    </author>
+    <id>tag:spring.io,2022-12-12:5033</id>
+    <updated>2022-12-12T16:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, we are very excited to announce the &lt;code&gt;2.10.0&lt;/code&gt; release of Spring Cloud Data Flow is now available from Maven Central.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-updates" class="anchor" name="spring-updates"&gt;&lt;/a&gt;Spring updates&lt;/h3&gt;
+&lt;p&gt;Updates to the following versions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot 2.7.6&lt;/li&gt;
+  &lt;li&gt;Spring Framework 5.3.24&lt;/li&gt;
+  &lt;li&gt;Spring Cloud 2021.0.5&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#spring-shell" class="anchor" name="spring-shell"&gt;&lt;/a&gt;Spring Shell&lt;/h3&gt;
+&lt;p&gt;Spring Shell has been updated to 2.1.4.&lt;/p&gt;&lt;h3&gt;&lt;a href="#documentation-updates" class="anchor" name="documentation-updates"&gt;&lt;/a&gt;Documentation Updates&lt;/h3&gt;&lt;h4&gt;&lt;a href="#container-images-for-arm" class="anchor" name="container-images-for-arm"&gt;&lt;/a&gt;Container images for ARM.&lt;/h4&gt;
+&lt;p&gt;Spring Cloud Data Flow and Skipper, and Stream Application projects contain scripts to use in creating containers when running on an ARM platform. The &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#create-containers"&gt;Reference Guide&lt;/a&gt; has a section describing the use of the scripts.&lt;/p&gt;&lt;h4&gt;&lt;a href="#scripts-for-local-kuberenetes-development" class="anchor" name="scripts-for-local-kuberenetes-development"&gt;&lt;/a&gt;Scripts for local Kuberenetes Development&lt;/h4&gt;
+&lt;p&gt;We have added a collection of scripts to the Spring Cloud Data Flow that makes it easy to launch a local Kuberenetes cluster and install SCDF with MariaDB and RabbitMQ or Kafka. See the &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/current/reference/htmlsingle/#local-k8s-development"&gt;Reference Guide&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;The detailed &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.10.0"&gt;release notes&lt;/a&gt; contain more info.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Vaadin's Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more" />
@@ -1083,22 +1106,6 @@ class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
 &lt;p&gt;For 1.1, we did not have time to properly tackle important features like &lt;a href="https://github.com/spring-projects/spring-graphql/issues/103"&gt;Pagination/Relay&lt;/a&gt;, but we&amp;rsquo;re listening to the community. We&amp;rsquo;re working on our roadmap for the next feature version, so now is the time to vote on existing issues to show your interest!&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.1.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: the road to Spring Framework 6: the new Ahead-of-Time Compilation Engine and GraalVM</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-tips-the-road-to-spring-framework-6-the-new-ahead-of-time-compilation-engine-and-graalvm" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-11-21:5001</id>
-    <updated>2022-11-23T08:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Spring Boot 3 is here (or will be tomorrow, on the &lt;strong&gt;24th of November, 2022&lt;/strong&gt;, to be more precise!), bringing a fantastic new Ahead-of-Time (AOT) compilation engine that supports GraalVM native images. Join me, and we&amp;rsquo;ll dive deep into the engine and its interactions with the Spring component model. &lt;/p&gt;
-&lt;p&gt;This video is a detailed masterclass on the new AOT engine. It starts by examining the everyday usecases of an application developer and delves deeper and deeper into the engine, treating concerns that library and framework developers will care about. &lt;/p&gt;
-&lt;p&gt;Enjoy! &lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TOfYlLjXufw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Also, Happy thanksgiving (if you celebrate) from us to you!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -1,0 +1,9 @@
+package com.myProject.myapp.controller;
+
+public class TestController {
+
+	@Controller
+	@GetMapping("/testPage"){
+		
+	}
+}
