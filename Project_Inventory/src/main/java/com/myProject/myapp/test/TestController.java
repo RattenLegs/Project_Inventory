@@ -13,4 +13,6 @@ public class TestController {
 	public void testPage(){
 		System.out.println("testController 생성!");
 	}
+	
+	
 }

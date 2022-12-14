@@ -5,7 +5,38 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-12-12T16:00:00Z</updated>
+  <updated>2022-12-13T09:00:00Z</updated>
+  <entry>
+    <title>This Week in Spring - December 13th, 2022</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/12/13/this-week-in-spring-december-13th-2022" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2022-12-13:5034</id>
+    <updated>2022-12-13T09:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! I truly, absolutely, can not believe that we&amp;rsquo;re nearly done with the year already! Have you made your new years&amp;rsquo; resolutions? Submitted your expense reports? It&amp;rsquo;s that time of the year when I&amp;rsquo;m going to start focusing on staying warm and avoiding undue work for a while :-) I hope you do too. This is why I&amp;rsquo;m glad I write these roundups: I hope they save people from extra, undue work! So, with that&amp;hellip; let&amp;rsquo;s dive into the roundup!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/08/a-bootiful-podcast-vaadin-s-marcus-hellberg-on-rich-uis-spring-boot-3-graalvm-native-images-and-more"&gt;A Bootiful Podcast: Vaadin&amp;rsquo;s Marcus Hellberg on rich UIs, Spring Boot 3, GraalVM native images, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721380042/0/baeldung~A-Guide-to-Spring-CredHub"&gt;A Guide to Spring CredHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/07/do-more-with-azure-spring-apps-scale-to-zero-and-enhance-productivity"&gt;Do more with Azure Spring Apps ? scale to zero and enhance productivity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721856188/0/baeldung~Form-Login-and-Basic-Authentication-in-springdocopenapi"&gt;Form Login and Basic Authentication in springdoc-openapi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721583490/0/baeldung~Getting-Started-with-Blaze-Persistence"&gt;Getting Started with Blaze Persistence&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721376820/0/baeldung~Guide-to-Java-PriorityQueue"&gt;Guide to Java PriorityQueue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721376818/0/baeldung~Java-Generics-PECS-Producer-Extends-Consumer-Super"&gt;Java Generics PECS ? Producer Extends Consumer Super&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/reactive-spring-security-simple/"&gt;RSocket Security with Spring Boot via Spring Security | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721581746/0/baeldung~Rate-Limiting-With-Client-IP-in-Spring-Cloud-Gateway"&gt;Rate Limiting With Client IP in Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721375482/0/baeldung~Reinitialize-Singleton-Bean-in-Spring-Context"&gt;Reinitialize Singleton Bean in Spring Context&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;a very important release - v3.0.0 - of the &lt;code&gt;rickroll-security-spring-boot-starter&lt;/code&gt; &lt;a href="https://github.com/TomCools/rickroll-security-spring-boot-starter/releases/tag/v3.0.0"&gt; ¡¤ TomCools/rickroll-security-spring-boot-starter&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://feeds.feedblitz.com/~/721375486/0/baeldung~Running-Spring-Boot-Applications-with-the-Embedded-Camunda-Engine"&gt;Running Spring Boot Applications with the Embedded Camunda Engine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/rsocket-tls-spring-boot/"&gt;Securing RSocket TCP with TLS | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/12/spring-cloud-data-flow-version-2-10-0-released"&gt;Spring Cloud Data Flow version 2.10.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/dependency-injection/"&gt;Spring Dependency Injection | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2022/12/07/spring-tools-4-17-0-released"&gt;Spring Tools 4.17.0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/developer/guides/distributed-tracing-reactive-kotlin-pt1/"&gt;Tracing a Reactive Kotlin App with Spring Cloud Sleuth | VMware Tanzu Developer Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Data Flow version 2.10.0 released</title>
     <link rel="alternate" href="https://spring.io/blog/2022/12/12/spring-cloud-data-flow-version-2-10-0-released" />
@@ -1069,43 +1100,6 @@ class MyJobConfiguration extends DefaultBatchConfiguration {&#xD;
     <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.1&lt;/code&gt; is available now.&lt;/p&gt;
 &lt;p&gt;Spring Framework &lt;code&gt;6.0.1&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v6.0.1"&gt;21 fixes and improvements&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.1/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.1.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-for-graphql-1-1-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-11-22:5013</id>
-    <updated>2022-11-23T09:37:00Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring for GraphQL 1.1.0 is now available on Maven Central. This version will ship with Spring Boot 3.0.0 later this week.&lt;/p&gt;
-&lt;p&gt;Spring for GraphQL 1.0.0 was released 6 months ago, so why a new minor version now? The team initially planned a 1.1.0 release with one goal in mind: support Spring Framework 6.0 / Spring Boot 3.0 and adapt to the new baseline for that generation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Java 17&lt;/li&gt;
-  &lt;li&gt;Jakarta EE 9&lt;/li&gt;
-  &lt;li&gt;GraphQL Java 19&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In addition, we shipped some new and noteworthy features we think you&amp;rsquo;ll like:&lt;/p&gt;&lt;h2&gt;&lt;a href="#observability" class="anchor" name="observability"&gt;&lt;/a&gt;Observability&lt;/h2&gt;
-&lt;p&gt;Observability is a major theme across the Spring portfolio in this major new Spring Framework 6 generation. Spring projects now have their own, built-in instrumentation for metrics and traces based on the &lt;a href="https://spring.io/blog/2022/10/12/observability-with-spring-boot-3"&gt;new Observation API&lt;/a&gt; from Micrometer. This new instrumentation in Spring for GraphQL replaces &lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.metrics.supported.spring-graphql"&gt;the former GraphQL Metrics support&lt;/a&gt; in Spring Boot 2.7. This is important to keep track of performance metrics for your GraphQL API, as well as to to explore traces and investigate production issues. GraphQL is a good use case for Observability in general, as the GraphQL engine can fan out data fetching across REST APIs, data stores, caches, and more. &lt;/p&gt;&lt;h2&gt;&lt;a href="#context-propagation" class="anchor" name="context-propagation"&gt;&lt;/a&gt;Context Propagation&lt;/h2&gt;
-&lt;p&gt;Observability depends on transparent context propagation. This is particularly important for GraphQL applications where a request may start in an HTTP handler, and result in calls to many &lt;code&gt;DataFetcher&lt;/code&gt; components, each of which can be asynchronous, and also reactive in Spring for GraphQL. &lt;/p&gt;
-&lt;p&gt;In version 1.0, we provided the &lt;code&gt;ThreadLocalAccessor&lt;/code&gt; contract to allow applications to hook any &lt;code&gt;ThreadLocal&lt;/code&gt; into context propagation. For version 1.1, we collaborated with the Micrometer and the Reactor teams to extract a separate library, and this is what lead to the &lt;a href="https://github.com/micrometer-metrics/context-propagation#context-propagation-library"&gt;Micrometer Context Propagation Library&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In version 1.1, context propagation is based on this new library. It should work just the same, but your &lt;code&gt;ThreadLocalAccessor&lt;/code&gt; implementations will need to be switched to the contract from the new library. There are benefits too. The new library provides a more transparent and more flexible mechanism, as well as a dedicated public API to register accessors, to take snapshots, to restore context, and so on, all of which increases its usability and provides more control to applications. &lt;/p&gt;
-&lt;p&gt;As one example of where the new library brings something new, a &lt;code&gt;ThreadLocal&lt;/code&gt; value from the HTTP layer (e.g. Spring MVC) will now appear as a name-value pair in the &lt;code&gt;GraphQLContext&lt;/code&gt; that&amp;rsquo;s exposed to &lt;code&gt;DataFetcher&lt;/code&gt; components, and therefore a controller method can access that via &lt;code&gt;@ContextValue&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#aot-and-graalvm-native-images" class="anchor" name="aot-and-graalvm-native-images"&gt;&lt;/a&gt;AOT and GraalVM Native Images&lt;/h2&gt;
-&lt;p&gt;Spring Framework 6 and Spring Boot 3.0 introduce support for building memory-efficient and fast, operating system- and architecture-specific, native binaries with GraalVM&amp;rsquo;s native image compiler. To enable this for Spring for GraphQL applications, first we collaborated with the GraphQL Java team to &lt;a href="https://github.com/oracle/graalvm-reachability-metadata/pull/102"&gt;contribute GraphQL Java metadata&lt;/a&gt; to the GraalVM Reachability Metadata Repository, which benefits the entire Java community, not just Spring applications. This covers GraphQL Java itself, but the GraphQL Java engine also needs to perform reflection on application Java types that map to the schema. To accommodate this, we&amp;rsquo;ve also created a dedicated AOT processor that inspects your GraphQL controllers at build time, and makes the necessary registrations.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;d like to give this a try, please start with the &lt;a href="https://docs.spring.io/spring-boot/docs/3.0.0-SNAPSHOT/reference/html/native-image.html#native-image"&gt;Spring Boot reference documentation on Native Images&lt;/a&gt;, and follow the latest updates &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-GraalVM"&gt;on the Spring Boot wiki&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#argument-binding" class="anchor" name="argument-binding"&gt;&lt;/a&gt;Argument Binding&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve had plenty of great feedback related to argument binding. There are some limitations from the way we used Spring Framework&amp;rsquo;s &lt;code&gt;DataBinder&lt;/code&gt; to bind from the GraphQL arguments map to &lt;code&gt;@Argument&lt;/code&gt; method parameters. This included specific scenarios with non-ordered collection types, generics, and others on the target objects.&lt;/p&gt;
-&lt;p&gt;Furthermore, a major requirement was to support GraphQL nullability which differentiates between an input argument that is explicitly set to &lt;code&gt;null&lt;/code&gt; vs omitted entirely. This is commonly used to support partial updates. However, with argument binding to higher level objects, a mere &lt;code&gt;null&lt;/code&gt; property in the resulting object graph does not help to differentiate whether the value was set to &lt;code&gt;null&lt;/code&gt; by the client or was not provided at all.&lt;/p&gt;
-&lt;p&gt;In version 1.1, we have introduced the following changes to &lt;code&gt;GraphQlArgumentBinder&lt;/code&gt; that unlocks more possibilities:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;binding to all types of Collections (&lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Map&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;not requiring constructor binding for advanced cases&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-graphql/docs/current-SNAPSHOT/reference/html/#controllers-schema-mapping-argument-value"&gt;new &lt;code&gt;ArgumentValue&lt;/code&gt; wrapper type&lt;/a&gt; that exposes information about whether the argument was omitted entirely&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For 1.1, we did not have time to properly tackle important features like &lt;a href="https://github.com/spring-projects/spring-graphql/issues/103"&gt;Pagination/Relay&lt;/a&gt;, but we&amp;rsquo;re listening to the community. We&amp;rsquo;re working on our roadmap for the next feature version, so now is the time to vote on existing issues to show your interest!&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.1.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

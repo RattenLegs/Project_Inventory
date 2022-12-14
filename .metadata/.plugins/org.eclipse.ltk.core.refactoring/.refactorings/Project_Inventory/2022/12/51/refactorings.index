@@ -3,3 +3,7 @@
 1670932294913	Rename package 'com.myProject.myapp.controller'
 1670932562816	Copy files
 1670932566758	Delete element
+1670949910521	Rename type 'ScoreDAO'
+1670950721120	Encapsulate field 'stuId'
+1670950860854	Rename type 'IScoreService'
+1670951102637	Rename type 'ScoreService'
