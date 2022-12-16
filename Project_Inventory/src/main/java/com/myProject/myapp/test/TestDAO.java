@@ -1,18 +1,14 @@
 package com.myProject.myapp.test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-@Repository //("bean id"), 빈 id를 지정하지 않으면 class 이름으로 자동등록됨, servlet-context.xml의 beans graph 볼것
+@Repository 
 public class TestDAO implements ITestDAO {
-
+	//@Repository("bean id"), 빈 id를 지정하지 않으면 class 이름으로 자동등록됨, servlet-context.xml의 beans graph 볼것
 	@Autowired
 	private JdbcTemplate template;
 	
@@ -46,7 +42,7 @@ public class TestDAO implements ITestDAO {
 		//# Spring-jdbc 방식의 처리: JdbcTemplate 활용!
 		String sql = "INSERT INTO scores "
 				+ "VALUES(id_seq.NEXTVAL,?,?,?,?,?,?)";
-		template.update(sql, test.getStuName(), test.getKor(),
+		template.update(sql, test.getStuName(), test.getKor(), //update라는 메서드를 통해 위에 작성한 sql문 전달, 이후 순서대로 ?에 들어갈 값 전달
 				test.getEng(), test.getMath(), test.getTotal(),
 				test.getAverage());
 	}
