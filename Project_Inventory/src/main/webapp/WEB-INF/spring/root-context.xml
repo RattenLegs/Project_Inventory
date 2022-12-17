@@ -16,7 +16,7 @@
 	<!-- 스프링 프레임워크에서 관리해야하는 객체(빈)을 설정하는 파일 -->	
 	<!-- 히카리 커넥션 풀 빈 등록 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
 		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
 		<property name="username" value="spring" />
 		<property name="password" value="spring" />

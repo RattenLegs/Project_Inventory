@@ -40,7 +40,7 @@ public class TestDAO implements ITestDAO {
 		
 		//Spring-jdbc: JdbcTemplate 활용!
 		//# Spring-jdbc 방식의 처리: JdbcTemplate 활용!
-		String sql = "INSERT INTO scores "
+		String sql = "INSERT INTO testscore "
 				+ "VALUES(id_seq.NEXTVAL,?,?,?,?,?,?)";
 		template.update(sql, test.getStuName(), test.getKor(), //update라는 메서드를 통해 위에 작성한 sql문 전달, 이후 순서대로 ?에 들어갈 값 전달
 				test.getEng(), test.getMath(), test.getTotal(),
@@ -49,8 +49,8 @@ public class TestDAO implements ITestDAO {
 	
 	@Override
 	public List<TestVO> selectAllTests() {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "SELECT * testscore ORDER BY stu_id ASC";
+		return template.query(sql, rowMapper);
 	}
 
 	@Override

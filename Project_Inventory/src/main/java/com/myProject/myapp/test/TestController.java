@@ -13,13 +13,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequestMapping("/test")
 public class TestController {
 
-	@GetMapping("/testPage")
-	public void testPage() {
+	public TestController()  {
 		System.out.println("testController 생성!");
 	}
 
 	// 컨트롤러와 서비스 계층 사이의 의존성 자동 주입을 위해 변수를 선언.
-	@Autowired
+	@Autowired(required=false)
 	private ITestService service; // 니가 문제
 
 	// 점수 등록 화면을 열어주는 처리를 하는 메서드.
