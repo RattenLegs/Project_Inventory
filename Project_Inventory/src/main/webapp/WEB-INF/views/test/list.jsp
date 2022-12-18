@@ -16,11 +16,11 @@
 		<p>
 			학번: ${stu.stuId}, 이름: ${stu.stuName}, 국어: ${stu.kor}, 영어: ${stu.eng}, 
 			수학: ${stu.math}, 총점: ${stu.total}, 평균: ${stu.average}
-			<a href="<c:url value='/score/delete?stuNum=${stu.stuId}' />">[삭제]</a>
+			<a href="<c:url value='/test/delete?stuNum=${stu.stuId}' />">[삭제]</a>
 		</p>
 	</c:forEach>
 	
-	<a href="<c:url value='/score/register' />">다른 점수 등록하기</a>
+	<a href="<c:url value='/test/register' />">다른 점수 등록하기</a>
 	
 	<%-- <p style="color: red;">
 		${msg}

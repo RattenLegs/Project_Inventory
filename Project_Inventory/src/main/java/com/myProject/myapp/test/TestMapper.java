@@ -14,8 +14,10 @@ public class TestMapper implements RowMapper<TestVO> {
 	public TestVO mapRow(ResultSet rs, int rowNum) throws SQLException {
 
 		System.out.println("mapRow 메서드 발동!");
+		//mapRow: 일종의 포장방법
 		System.out.println("rowNum: " + rowNum);
 
+		//TestVO에 ResultSet 안에 있는 것들을 하나씩 채워넣을 것
 		TestVO vo = new TestVO();
 		vo.setStuId(rs.getInt("stu_id"));
 		vo.setStuName(rs.getString("stu_name"));

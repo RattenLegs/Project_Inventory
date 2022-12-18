@@ -49,13 +49,24 @@ public class TestDAO implements ITestDAO {
 	
 	@Override
 	public List<TestVO> selectAllTests() {
-		String sql = "SELECT * testscore ORDER BY stu_id ASC";
-		return template.query(sql, rowMapper);
+		String sql = "SELECT * FROM testscore ORDER BY stu_id ASC";
+		return template.query(sql, new TestMapper());
+		
+		/*
+		 * sql 작성 후 template의 query라는 메서드를 이용해 sql과 TestMapper 같이 전달
+		 * jdbc 탬플릿이 sql문을 돌린 후 결과, ResultSet을 받음
+		 * TestMapper라는 Class를 통해 어떤 값을 조회해야할지 알려줌
+		 * jdbc 탬플릿이 TestMapper 안에 있는 mapRow를 불러 ResultSet 객체를 전달
+		 * TestVO객체가 생성되고 객체가 포장됨
+		 * 그 다음에 포장된 객체를 jdbc 탬플릿에 리턴
+		 * jdbc 탬플릿은 list를 만들고 객체를 집어넣음 
+		 * */
 	}
 
 	@Override
 	public void deleteTest(int num) {
-		// TODO Auto-generated method stub
+		String sql = "DELETE * FROM testscore WHERE stu_id=?";
+		template.update(sql, num);
 		
 	}
 

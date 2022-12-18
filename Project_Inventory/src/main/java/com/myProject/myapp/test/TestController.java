@@ -19,7 +19,7 @@ public class TestController {
 
 	// 컨트롤러와 서비스 계층 사이의 의존성 자동 주입을 위해 변수를 선언.
 	@Autowired(required=false)
-	private ITestService service; // 니가 문제
+	private ITestService service;
 
 	// 점수 등록 화면을 열어주는 처리를 하는 메서드.
 	@GetMapping("/register")
@@ -42,7 +42,7 @@ public class TestController {
 	public void list(Model model) {
 		System.out.println("/test/list: GET");
 		// List<TestVO> list = service.selectAllTests();
-		model.addAttribute("sList", service.selectAllTests());
+		model.addAttribute("sList", service.selectAllTests()); //니가 문제
 	}
 
 	// 점수 삭제 요청 처리 메서드
