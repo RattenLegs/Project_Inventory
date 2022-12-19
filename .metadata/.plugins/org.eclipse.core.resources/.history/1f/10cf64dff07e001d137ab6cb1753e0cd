@@ -42,7 +42,11 @@ public class TestController {
 	public void list(Model model) {
 		System.out.println("/test/list: GET");
 		// List<TestVO> list = service.selectAllTests();
-		model.addAttribute("tList", service.selectAllTests()); //니가 문제
+		if(model != null) {
+			model.addAttribute("sList", service.selectAllTests()); //니가 문제
+		} else {
+			model.addAttribute("sList", service.selectAllTests());
+		}
 	}
 
 	// 점수 삭제 요청 처리 메서드
