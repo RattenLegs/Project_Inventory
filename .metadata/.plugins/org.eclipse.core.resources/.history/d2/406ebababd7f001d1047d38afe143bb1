@@ -18,13 +18,7 @@ public class TestController {
 	}
 
 	// 컨트롤러와 서비스 계층 사이의 의존성 자동 주입을 위해 변수를 선언.
-	@Autowired
 	private ITestService service;
-	
-
-	/*
-	 * public TestController(ITestService service) { this.service = service; }
-	 */
 
 	// 점수 등록 화면을 열어주는 처리를 하는 메서드.
 	@GetMapping("/register")
