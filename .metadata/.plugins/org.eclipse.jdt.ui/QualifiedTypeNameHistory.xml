@@ -24,6 +24,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="com.myProject.myapp.test.ITestService"/>
 <fullyQualifiedTypeName name="com.myProject.myapp.test.TestController"/>
+<fullyQualifiedTypeName name="com.myProject.myapp.test.ITestService"/>
 </qualifiedTypeNameHistroy>

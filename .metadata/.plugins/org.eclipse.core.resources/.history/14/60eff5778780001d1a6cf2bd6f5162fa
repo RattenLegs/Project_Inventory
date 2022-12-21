@@ -21,9 +21,10 @@ public class TestController {
 	@Autowired(required=false)
 	private ITestService service;
 	
-	/*
-	 * public void setITestService(ITestService service) { this.service = service; }
-	 */
+	public void setITestService(ITestService service) {
+		this.service = service;
+	}
+
 	// 점수 등록 화면을 열어주는 처리를 하는 메서드.
 	@GetMapping("/register")
 	public String register() {
