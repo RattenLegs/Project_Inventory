@@ -50,7 +50,6 @@ INDEX VERSION 1.131+C:\Users\RattanLegs\Desktop\rattanlegs\Project_Inventory\.me
 2584997896.index
 447688663.index
 4127501816.index
-710988858.index
 3525261048.index
 1773224287.index
 2327290437.index
