@@ -19,6 +19,7 @@ public class TestController {
 
 	// 컨트롤러와 서비스 계층 사이의 의존성 자동 주입을 위해 변수를 선언.
 	//도대체 시발 어떻게 이걸 해결해야 할까요
+	//결국 다시 하나하나 공부중
 	@Autowired
 	private ITestService service;
 	
