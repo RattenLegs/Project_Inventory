@@ -44,7 +44,5 @@
 
 	<context:component-scan
 		base-package="com.myProject.myapp" />
-			<context:component-scan
-		base-package="com.myProject.myapp.test" />
 
 </beans:beans>

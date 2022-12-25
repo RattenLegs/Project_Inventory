@@ -10,7 +10,7 @@
 
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
-		<!-- 프론트 컨트롤러 개념, 프론트 코드 존재 -->
+		<!-- 프론트 컨트롤러 개념 -->
 	<!-- DispatcherServlet 관련 설정. -->
 
 	<!-- Enables the Spring MVC @Controller programming model -->
@@ -44,7 +44,5 @@
 
 	<context:component-scan
 		base-package="com.myProject.myapp" />
-			<context:component-scan
-		base-package="com.myProject.myapp.test" />
 
 </beans:beans>
