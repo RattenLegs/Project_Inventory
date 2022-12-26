@@ -1,6 +1,5 @@
 package com.myProject.myapp.test;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +17,7 @@ public class TestController {
 	}
 
 	// 컨트롤러와 서비스 계층 사이의 의존성 자동 주입을 위해 변수를 선언.
-	@Autowired(required=false)
+	//@Autowired
 	private ITestService service;
 
 	// 점수 등록 화면을 열어주는 처리를 하는 메서드.
@@ -39,12 +38,10 @@ public class TestController {
 
 	// 점수 전체 조회를 처리하는 요청 메서드
 	@GetMapping("/list")
-	public String list(Model model) {
+	public void list(Model model) {
 		System.out.println("/test/list: GET");
 		// List<TestVO> list = service.selectAllTests();
-		model.addAttribute("sList", service.selectAllTests()); //니가 문제
-		
-		return "test/list";
+		model.addAttribute("tList", service.selectAllTests()); //니가 문제
 	}
 
 	// 점수 삭제 요청 처리 메서드
