@@ -3,6 +3,8 @@ package com.myProject.myapp.util;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.myProject.myapp.util.vo.PageVO;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
