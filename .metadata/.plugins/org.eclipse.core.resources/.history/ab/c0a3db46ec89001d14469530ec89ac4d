@@ -29,5 +29,4 @@ public class FreeboardController {
 		 * System.out.println("test 요청 들어옴"); return "test"; //test는 dispatchersevlet으로,
 		 * d는 test를 viewResolver에게, viewResolver는 test 앞에 prefix, 뒤에 suffix 붙임 }
 		 */
-
 }
