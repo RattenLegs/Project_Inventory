@@ -38,15 +38,15 @@
 	</bean>
 
 	<!-- 마이바티스 SQL 동작을 위한 핵심 객체 SqlSessionFactory 클래스 빈 등록 -->
-<!-- 	<bean id="sqlSessionFactory"
+ 	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds" />
 		<property name="mapperLocations"
 			value="classpath:/mappers/**/*Mapper.xml" />
-		<property name="mapperLocations"> <array> <value>classpath:/mappers/score/ScoreMapper.xml</value> 
-			<value>classpath:/mappers/board/BoardMapper.xml</value> </array> </property>
+<!-- 		<property name="mapperLocations"> <array> <value>classpath:/mappers/score/ScoreMapper.xml</value> 
+			<value>classpath:/mappers/board/BoardMapper.xml</value> </array> </property> -->
 	</bean>
- -->
+
 <!-- 	<mybatis-spring:scan base-package="com.myProject.myapp" /> -->
 
 </beans>

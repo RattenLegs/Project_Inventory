@@ -5,6 +5,7 @@ import java.util.List;
 import com.myProject.myapp.freeboard.vo.FreeBoardVO;
 import com.myProject.myapp.util.vo.PageVO;
 
+
 public interface IFreeBoardMapper {
 	//글 등록
 	void regist(FreeBoardVO vo);
