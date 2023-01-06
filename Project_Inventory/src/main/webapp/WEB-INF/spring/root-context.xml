@@ -47,6 +47,6 @@
 			<value>classpath:/mappers/board/BoardMapper.xml</value> </array> </property> -->
 	</bean>
 
-<!-- 	<mybatis-spring:scan base-package="com.myProject.myapp" /> -->
+ <!-- 	<mybatis-spring:scan base-package="com.myProject.myapp" /> -->
 
 </beans>

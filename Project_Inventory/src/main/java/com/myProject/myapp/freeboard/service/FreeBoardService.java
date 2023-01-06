@@ -2,9 +2,12 @@ package com.myProject.myapp.freeboard.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.myProject.myapp.freeboard.vo.FreeBoardVO;
 import com.myProject.myapp.util.vo.PageVO;
 
+@Service
 public class FreeBoardService implements IFreeBoardService {
 
 	@Override
