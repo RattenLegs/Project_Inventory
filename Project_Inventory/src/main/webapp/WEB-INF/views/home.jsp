@@ -10,6 +10,7 @@
 <title>수유점 관리시스템에 오신걸 환영합니다.</title>
 
  <%@ include file="../views/include/header.jsp" %>
+ <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- favicon.ico 없애주는 친구 -->
 </head>
 <body>
 	<section>

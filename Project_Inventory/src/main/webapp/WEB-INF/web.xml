@@ -17,8 +17,7 @@
 	<!-- 스프링 프로젝트가 가동을 시작하면서, listener가 동작하고, 위에 선언된 root-context.xml을 모든 서블릿에서 
 		공유하도록 스프링 설정 파일로 초기 선언. -->
 	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener
-		</listener-class>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
 	<!-- Processes application requests -->
@@ -31,10 +30,10 @@
 		</servlet-class>
 		<init-param><!-- DispatcherServlet이 처음 생성될 때 참조해야할 초기화된 parameter -->
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml
+			<param-value>/WEB-INF/spring/config/servlet-config.xml
 			</param-value>
 		</init-param>
-		<load-on-startup>1</load-on-startup><!-- 우선순위 1등, 무조건 먼저 생성  -->
+		<load-on-startup>1</load-on-startup><!-- 우선순위 1등, 무조건 먼저 생성 -->
 	</servlet>
 
 	<!-- 위에 선언된 appServlet을 모든 경로 대해 맵핑 처리. -->

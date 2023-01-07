@@ -11,7 +11,7 @@ import com.myProject.myapp.freeboard.mapper.IFreeBoardMapper;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml")
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/config/servlet-config.xml")
 public class FreeBoardMapperTest {
 
 	@Autowired
