@@ -3,8 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
 	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
@@ -18,8 +20,8 @@
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
 		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="username" value="spring" />
-		<property name="password" value="spring" />
+		<property name="username" value="inventory" />
+		<property name="password" value="inventory" />
 	</bean>
 	
 
@@ -47,6 +49,6 @@
 			<value>classpath:/mappers/board/BoardMapper.xml</value> </array> </property> -->
 	</bean>
 
- <!-- 	<mybatis-spring:scan base-package="com.myProject.myapp" /> -->
+ 	<mybatis-spring:scan base-package="com.myProject.myapp" /> 
 
 </beans>

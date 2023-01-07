@@ -1,5 +1,0 @@
-package com.myProject.myapp.freeboard.mapper;
-
-public interface IFreeBoardMapper {
-
-}
