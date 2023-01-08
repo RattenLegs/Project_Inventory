@@ -10,7 +10,7 @@
 	<!-- mvc와 관련된 스프링 설정 파일의 위치를 저장하는 태그 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+		<param-value>/WEB-INF/spring/config/db-config.xml</param-value>
 	</context-param>
 
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->

@@ -10,8 +10,8 @@ public class DBConnectionTest {
 
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	private String uid = "spring";
-	private String upw = "spring";
+	private String uid = "inventory";
+	private String upw = "inventory";
 
 	//DB 연결 테스트
 	@Test
