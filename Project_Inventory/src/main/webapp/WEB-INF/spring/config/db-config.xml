@@ -13,13 +13,7 @@
 		이런 경우에는 .properties라는 파일을 사용하여 텍스트 형식으로 간단히 지정하고
 		필요할 때 불러와서 사용하는 방식을 많이 사용합니다.
 	 -->
-	 
-	 <!-- 외부에 따로 설정한 설정파일을 참조하는 곳에 사용하는 클래스 -->
-	 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-	 	<property name="location" value="classpath:/db-config/Hikari.properties" />
-	 </bean>
-	
-	
+
 	<!-- 히카리 커넥션 풀 빈 등록 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="${ds.driverClassName}" />
@@ -27,6 +21,14 @@
 		<property name="username" value="${ds.username}" />
 		<property name="password" value="${ds.password}" />
 	</bean>
+	 
+	 <!-- 외부에 따로 설정한 설정파일을 참조하는 곳에 사용하는 클래스 -->
+	 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	 	<property name="location" value="classpath:/db-config/Hikari.properties" />
+	 </bean>
+	
+	
+
 	
 	<!-- 히카리 데이터소스 빈 등록 -->
 	<bean id="ds" class="com.zaxxer.hikari.HikariDataSource">

@@ -17,10 +17,6 @@ public class freeBoardMapperTest {
 	@Autowired
 	private IFreeBoardMapper mapper;
 	
-	/*
-	 * @Autowired public freeBoardMapperTest(IFreeBoardMapper mapper) { this.mapper
-	 * = mapper; } //생성자 주입으로 전환(시도)
-	 */	
 	@Test
 	public void registTest() {
 		for(int i=1; i<=30; i++) {
