@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2023-01-13T11:46:22Z</updated>
+  <updated>2023-01-13T15:15:26Z</updated>
+  <entry>
+    <title>Spring Shell 2.1.5 and 3.0.0-RC1 are now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2023/01/13/spring-shell-2-1-5-and-3-0-0-rc1-are-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2023-01-13:5057</id>
+    <updated>2023-01-13T15:15:26Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Shell &lt;code&gt;2.1.5&lt;/code&gt; and &lt;code&gt;3.0.0-RC1&lt;/code&gt; has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;https://repo.spring.io/release&lt;/a&gt;, Maven Central and &lt;a href="https://repo.spring.io/milestone"&gt;https://repo.spring.io/milestone&lt;/a&gt; respectively.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v2.1.5"&gt;release notes 2.1.5&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-shell/releases/tag/v3.0.0-RC1"&gt;release notes 3.0.0-RC1&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-shell/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-shell/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-shell/docs/2.1.5/site/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data 2022.0.1 and 2021.2.7 available</title>
     <link rel="alternate" href="https://spring.io/blog/2023/01/13/spring-data-2022-0-1-and-2021-2-7-available" />
@@ -635,19 +650,6 @@ dependencyManagement {&#xD;
 &lt;p&gt;A great place to get started is the &lt;a href="https://docs.spring.io/spring-pulsar/docs/0.1.0/reference/html/#quick-tour"&gt;Quick Tour&lt;/a&gt; in the reference docs.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-pulsar"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-pulsar/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-pulsar/docs/0.1.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-pulsar"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Microsoft's Brian Benz on the state of Java, Microsoft, Azure, and so much more</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/12/15/a-bootiful-podcast-microsoft-s-brian-benz-on-the-state-of-java-microsoft-azure-and-so-much-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2022-12-15:5037</id>
-    <updated>2022-12-15T11:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to &lt;a href="https://twitter.com/bbenz"&gt;Microsoft&amp;rsquo;s Brian Benz (@bbenz)&lt;/a&gt;&lt;/p&gt;
-&lt;iframe title="Microsoft¡¯s Brian Benz on the state of Java, Microsoft, Azure, and so much more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=spj7w-133c0c6-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
