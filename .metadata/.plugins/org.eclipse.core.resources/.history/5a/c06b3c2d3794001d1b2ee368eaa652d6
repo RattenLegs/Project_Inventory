@@ -41,7 +41,7 @@
 			해당 구현체 xml 파일의 경로를 알려줘야 한다.
 			와일드카드 매핑을 이용해서 규칙을 설정.
 		 -->
-		<property name="mapperLocations" value="classpath*:/mappers/*.xml" />
+		<property name="mapperLocations" value="classpath:/mappers/*.xml" />
 		<property name="configLocation" value="WEB-INF/spring/config/mybatis-config.xml" />
 
  	</bean>

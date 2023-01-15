@@ -17,7 +17,7 @@
 	<!-- 히카리 커넥션 풀 빈 등록 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
-		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521/xe" />
 		<property name="username" value="inventory" />
 		<property name="password" value="inventory" />
 	</bean>
