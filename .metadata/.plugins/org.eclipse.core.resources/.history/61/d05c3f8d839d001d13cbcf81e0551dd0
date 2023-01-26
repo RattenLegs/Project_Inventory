@@ -1,5 +1,11 @@
 package com.myProject.myapp;
 
+import javax.inject.Inject;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -19,13 +25,11 @@ public class MyBatisTest {
 		System.out.println(sqlFactory);
 	}
 	
-	//MyBatis와 Mysql 서버가 제대로 연결되었는지 Test
-	@Test
-	public void testSession() throws Exception{
-		try(SqlSession session = sqlFactory.openSession()){
-			System.out.println(session);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
+	/*
+	 * //MyBatis와 Mysql 서버가 제대로 연결되었는지 Test
+	 * 
+	 * @Test public void testSession() throws Exception{ try(SqlSession session =
+	 * sqlFactory.openSession()){ System.out.println(session); }catch(Exception e) {
+	 * e.printStackTrace(); } }
+	 */
 }
