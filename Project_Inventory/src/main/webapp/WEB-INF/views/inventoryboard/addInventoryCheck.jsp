@@ -18,7 +18,6 @@
 	<button type="button" onclick="goInventoryList();">아니오</button>
 	
 </body>
-</html>
 
 <script>
 
@@ -27,3 +26,6 @@ function goInventoryList(){
 }
 
 </script>
+
+</html>
+

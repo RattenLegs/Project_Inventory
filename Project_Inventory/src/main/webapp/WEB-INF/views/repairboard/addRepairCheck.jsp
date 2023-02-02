@@ -18,13 +18,12 @@
 	<button type="button" onclick="goRepairList();">아니오</button>
 
 </body>
-</html>
 
 <script>
-
 function goRepairList(){
     location.href = "/repairboard/repairList";
 }
-
-
 </script>
+
+</html>
+
