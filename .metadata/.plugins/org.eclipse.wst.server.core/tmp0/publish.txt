@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Thu Feb 02 23:17:27 KST 2023
+#Tue Feb 07 23:36:15 KST 2023
 org.eclipse.jst.jee.server\:Project_Inventory=C\:\\Users\\RattanLegs\\Desktop\\rattanlegs\\Server\\apache-tomcat-9.0.69\\wtpwebapps\\Project_Inventory
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\RattanLegs\\.m2\\repository\\org\\springframework\\spring-web\\5.3.18\\spring-web-5.3.18.jar=C\:\\Users\\RattanLegs\\Desktop\\rattanlegs\\Server\\apache-tomcat-9.0.69\\wtpwebapps\\Project_Inventory\\WEB-INF\\lib\\spring-web-5.3.18.jar

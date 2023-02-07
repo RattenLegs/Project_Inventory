@@ -10,6 +10,7 @@
 <form action="/repairboard/addRepairCheck" method="post">
 	<fieldset>
 		<legend>등록 양식</legend>
+		<p>팝업으로 처리될 예정입니다.</p>
 		<p>
 
 		# 번호 <input type="text" name="num" size="10"> <br> 

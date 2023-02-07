@@ -1,2 +1,3 @@
 ajde.version.at.previous.startup=2.2.4.202004271746
 eclipse.preferences.version=1
+org.eclipse.ajdt.core.compiler.nonStandardOptions=-encoding UTF-8
