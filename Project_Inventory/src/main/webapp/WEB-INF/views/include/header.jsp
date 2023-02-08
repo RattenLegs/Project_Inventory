@@ -52,7 +52,7 @@
 								<li><a
 									href="<c:url value='/inventoryboard/inventoryList' />">재고관리</a></li>
 								<li><a href="<c:url value='/repairboard/repairList' />">수선관리</a></li>
-<%-- 								<li><a href="<c:url value='/test/list' />">테스트</a></li> --%>
+							<li><a href="<c:url value='/testModal/testModalMain' />">테스트모달</a></li>
 								<!-- 
 				<li><a href="#">강의</a></li>
                                 <li><a href="#">Form</a></li>
