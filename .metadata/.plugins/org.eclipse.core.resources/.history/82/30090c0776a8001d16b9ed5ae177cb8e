@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testModalMain</title>
+<%-- <%@ include file="../../views/include/header.jsp"%> --%>
+</head>
+<body>
+
+
+<button id="show">팝업열기</button>
+
+<div class="background">
+  <div class="window">
+    <div class="popup">
+      <button id="close">팝업닫기</button>
+    </div>
+  <div>
+<div>
+
+<%-- <%@ include file="../../views/include/footer.jsp"%> --%>
+</body>
+</html>
