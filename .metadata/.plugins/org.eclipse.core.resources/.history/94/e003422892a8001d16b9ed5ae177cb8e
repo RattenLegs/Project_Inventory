@@ -22,26 +22,18 @@
 			<!-- 			<p>수선용 테이블이 등장할 예정</p>
 			<p>번호 접수일 이름 연락처 디자인 내용 약속일 매장재고일 납품일 비고</p> -->
 			<table border="1">
+
 				<thead>
-					<tr>
-						<th>번호</th>
-						<th>접수일</th>
-						<th>이름</th>
-						<th>연락처</th>
-						<th>디자인</th>
-						<th>내용</th>
-						<th>약속일</th>
-						<th>매장재고일</th>
-						<th>납품일</th>
-						<th>비고</th>
-					</tr>
+					<tr>번호</tr>
+					<tr>접수일</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
+					<tr>번호</tr>
 				</thead>
-				
-				<tbody>
-				</tbody>
-				
-				<tfoot>
-				</tfoot>
 				
 
 			</table>
