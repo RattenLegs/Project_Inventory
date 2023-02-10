@@ -15,9 +15,9 @@
 		${pageContext.request.contextPath} == <c:url value='' />
 	 -->
 
-<link
+<%-- <link
 	href="${pageContext.request.contextPath}/resources/css/bootstrap.css"
-	rel="stylesheet">
+	rel="stylesheet"> --%>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--개인 디자인 추가-->
