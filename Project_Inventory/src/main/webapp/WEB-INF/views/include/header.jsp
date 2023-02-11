@@ -9,7 +9,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>인덱스를 만들어 보자</title>
 
 <!-- 
 		${pageContext.request.contextPath} == <c:url value='' />
@@ -22,10 +21,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--개인 디자인 추가-->
 <link href="${pageContext.request.contextPath}/resources/css/style.css"
-	rel="stylesheet"> 
+	rel="stylesheet">
 <script
 	src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
 </head>
+
+
 <body>
 	<header>
 		<div class="container-fluid">
@@ -52,7 +53,7 @@
 								<li><a
 									href="<c:url value='/inventoryboard/inventoryList' />">재고관리</a></li>
 								<li><a href="<c:url value='/repairboard/repairList' />">수선관리</a></li>
-							<li><a href="<c:url value='/testModal/testModalMain' />">테스트모달</a></li>
+								<li><a href="<c:url value='/testModal/testModalMain' />">테스트모달</a></li>
 								<!-- 
 				<li><a href="#">강의</a></li>
                                 <li><a href="#">Form</a></li>

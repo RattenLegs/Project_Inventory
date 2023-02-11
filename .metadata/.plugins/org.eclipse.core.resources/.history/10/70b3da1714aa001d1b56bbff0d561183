@@ -1,0 +1,89 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>재고관리 시스템입니다.</title>
+<%@ include file="../../views/include/header.jsp"%>
+<link
+	href="${pageContext.request.contextPath}/resources/modal/modal.css"
+	rel="stylesheet">
+
+</head>
+<body>
+	<section>
+		<div style="text-align: center">
+			<h1>재고관리 시스템입니다!</h1>
+		</div>
+	</section>
+	<section>
+		<div>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>남화/여화</th>
+						<th>디자인NO</th>
+						<th>색상</th>
+						<th>사이즈</th>
+						<th>수량</th>
+						<th>세일가</th>
+						<th>계</th>
+
+					</tr>
+				</thead>
+
+				<tbody>
+				</tbody>
+
+				<tfoot>
+				</tfoot>
+				
+			</table>
+		</div>
+
+		<div>
+		<p>조회</p>
+					<p>
+				<a href="<c:url value='/inventoryboard/addInventory' />">등록</a>
+			</p>
+			<p>수정</p>
+			<p>삭제</p>
+		</div>
+
+
+		<button id="modalOpen">등록</button>
+
+		<div class="background">
+			<div class="window">
+				<div class="modalyes">
+					<form action="/inventoryboard/addInventoryCheck" method="post">
+						<fieldset>
+							<legend>등록 양식</legend>
+							<p>
+								<input type="checkbox" name="shoeGender" value="남화"> 남화
+								&nbsp; <input type="checkbox" name="shoeGender" value="여화">
+								여화 &nbsp; <br> # 디자인NO <input type="text" name="design"
+									size="10"> <br> # 색상 <input type="text"
+									name="color" size="10"> <br> # 사이즈 <input
+									type="text" name="size" size="10"> <br> # 수량 <input
+									type="text" name="num" size="10"> <br> # 세일가 <input
+									type="text" name="price" size="10"> <br> # 계 <input
+									type="text" name="sum" size="10"> <br> <input
+									type="submit" value="확인">
+							</p>
+						</fieldset>
+
+					</form>
+
+					<button id="modalClose">모달 닫기</button>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<%@ include file="../../views/include/footer.jsp"%>
+</body>
+<script src="${pageContext.request.contextPath}/resources/modal/modal.js"></script>
+</html>

@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>  
     
     <%@ include file="../include/header.jsp" %>
-    
+    <title>자유게시판입니다.</title>
     
     <section>
         <div class="container-fluid">
