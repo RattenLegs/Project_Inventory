@@ -22,9 +22,7 @@
 					<div class="titlebox">
 						<p>수 선 관 리</p>
 					</div>
-				</div>
-			</div>
-		</div>
+
 		<hr>
 
 	<%@ include file="../../views/repairboard/repairSearchForm.jsp"%>
@@ -60,12 +58,43 @@
 			<p>수정</p>
 			<p>삭제</p>
 		</div>
+		
+		                    <!--페이지 네이션을 가져옴-->
+		    <form action="<c:url value='/freeboard/freeList' />" name="pageForm">
+                    <div class="text-center">
+                    <hr>
+                    <ul id="pagination" class="pagination pagination-sm">
+                    	<c:if test="${pc.prev}">
+                        	<li><a href="#" data-pagenum="${pc.beginPage-1}">이전</a></li>
+                        </c:if>
+                        
+                        <c:forEach var="num" begin="${pc.beginPage}" end="${pc.endPage}">
+                        	<li class="${pc.paging.pageNum == num ? 'active' : ''}"><a href="#" data-pagenum="${num}">${num}</a></li>
+                        </c:forEach>
+                        
+                        <c:if test="${pc.next}">
+                        	<li><a href="#" data-pagenum="${pc.endPage+1}">다음</a></li>
+                        </c:if>
+                    </ul>
+                    <button type="button" class="btn btn-info" onclick="location.href='<c:url value="/freeboard/freeRegist" />'">글쓰기</button>
+                    </div>
+                    
+                    <!-- 페이지 관련 버튼(이전, 다음, 페이지번호)을 클릭 시 같이 숨겨서 보내줄 공통 값  -->
+                    <input type="hidden" name="pageNum" value="${pc.paging.pageNum}">
+                    <input type="hidden" name="cpp" value="${pc.paging.cpp}">
+                    <input type="hidden" name="condition" value="${pc.paging.condition}">
+                    <input type="hidden" name="keyword" value="${pc.paging.keyword}">
+                    
+		    </form>
+		
 
 	<%@ include file="../../views/repairboard/repairModalForm.jsp"%>
 
 <%-- 	<%@ include file="../../views/repairboard/repairSearchForm.jsp"%> --%>
 <!-- 지우고 위로 올라가는 버튼 만들 예정 -->
-
+				</div>
+			</div>
+		</div>
 	</section>
 	<%@ include file="../../views/include/footer.jsp"%>
 </body>

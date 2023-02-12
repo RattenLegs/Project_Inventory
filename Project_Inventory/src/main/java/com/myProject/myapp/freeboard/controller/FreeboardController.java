@@ -15,5 +15,8 @@ public class FreeboardController {
 	@GetMapping("/freeList")
 	public void freeList() {}
 
+	//글쓰기 화면 처리
+	@GetMapping("/freeRegist")
+	public void freeRegist() {}
 
 }

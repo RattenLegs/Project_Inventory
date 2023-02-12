@@ -1,14 +1,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page session="false"%>
+<!-- JSTL 라이브러리 추가 -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!-- JSTL FMT태그 추가 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%><!-- 한글 깨질때 꼭 해야함 -->
+
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>수선관리 시스템입니다.</title>
 <%@ include file="../../views/include/header.jsp"%>
+<link href="${pageContext.request.contextPath}/resources/modal/modal.css" rel="stylesheet">
 
 </head>
 <body>
@@ -20,12 +22,13 @@
 					<div class="titlebox">
 						<p>수 선 관 리</p>
 					</div>
-				</div>
-			</div>
-		</div>
+
 		<hr>
-		<div style="text-align: center">
-			<table border="1">
+
+	<%@ include file="../../views/repairboard/repairSearchForm.jsp"%>
+
+		<div>
+			<table class="table table-bordered">
 				<thead>
 					<tr>
 						<th>번호</th>
@@ -47,50 +50,26 @@
 				<tfoot>
 				</tfoot>
 
-
 			</table>
 		</div>
 
 		<div>
-			<p>조회조건</p>
-			<p>조회</p>
-			<p>
-				<a href="<c:url value='/repairboard/addRepair'/>">등록</a>
-			</p>
+			<button id="modalOpen">등록</button>
 			<p>수정</p>
 			<p>삭제</p>
-
 		</div>
 
-		<button id="modalOpen">모달 열기</button>
+	<%@ include file="../../views/repairboard/repairModalForm.jsp"%>
 
-		<div class="background">
-			<div class="window">
-				<div class="modal">
-					<button id="modalClose">모달 닫기</button>
+<%-- 	<%@ include file="../../views/repairboard/repairSearchForm.jsp"%> --%>
+<!-- 지우고 위로 올라가는 버튼 만들 예정 -->
 				</div>
 			</div>
 		</div>
-
-
 	</section>
 	<%@ include file="../../views/include/footer.jsp"%>
 </body>
 
-
-    <script>
-      function modalOpen() {
-        document.querySelector(".background").className = "background modalOpen";
-      }
-
-      function close() {
-        document.querySelector(".background").className = "background";
-      }
-
-      document.querySelector("#modalOpen").addEventListener("click", modalOpen);
-      document.querySelector("#modalClose").addEventListener("click", close);
-      document.querySelector(".background").addEventListener("click", close); //바깥 클릭시에도 닫히게 하기
-
-    </script>
+<script	src="${pageContext.request.contextPath}/resources/modal/modal.js"></script>
 
 </html>
