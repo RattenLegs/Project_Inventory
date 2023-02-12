@@ -33,11 +33,10 @@ public class RepairController {
 		return "/repairboard/repairList";
 	}
 	
-	@GetMapping("/addRepair")
-	public String addRepair() {
-		System.out.println("수선등록으로 이동");
-		return "/repairboard/addRepair";
-	}
+	/*
+	 * @GetMapping("/addRepair") public String addRepair() {
+	 * System.out.println("수선등록으로 이동"); return "/repairboard/addRepair"; }
+	 */
 	
 	@PostMapping("/addRepairCheck")
 	public ModelAndView addRepairCheck(AddRepairVO AddRepair) {

@@ -8,4 +8,3 @@ function modalOpen() {
 
 	document.querySelector("#modalOpen").addEventListener("click", modalOpen);
 	document.querySelector("#modalClose").addEventListener("click", close);
-/* 	document.querySelector(".background").addEventListener("click", close); */ //바깥 클릭시에도 닫히게 하기

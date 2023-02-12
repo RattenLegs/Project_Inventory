@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="jdbc"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value=".background"/>
+			<item value="background"/>
 			<item value="jdbc"/>
 			<item value="oracle"/>
 			<item value="jstl"/>

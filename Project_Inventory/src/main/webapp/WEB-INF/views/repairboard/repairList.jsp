@@ -10,9 +10,7 @@
 
 <title>수선관리 시스템입니다.</title>
 <%@ include file="../../views/include/header.jsp"%>
-<link
-	href="${pageContext.request.contextPath}/resources/modal/modal.css"
-	rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/modal/modal.css" rel="stylesheet">
 
 </head>
 <body>
@@ -72,7 +70,6 @@
 	<%@ include file="../../views/include/footer.jsp"%>
 </body>
 
-<script
-	src="${pageContext.request.contextPath}/resources/modal/modal.js"></script>
+<script	src="${pageContext.request.contextPath}/resources/modal/modal.js"></script>
 
 </html>

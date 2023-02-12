@@ -24,12 +24,10 @@ public class InventoryController {
 		return "/inventoryboard/inventoryList";
 	}
 
-	@GetMapping("/addInventory")
-	public String addInventory() {
-		System.out.println("재고등록으로 이동");
-		return "/inventoryboard/addInventory";
-	}
-	
+	/*
+	 * @GetMapping("/addInventory") public String addInventory() {
+	 * System.out.println("재고등록으로 이동"); return "/inventoryboard/addInventory"; }
+	 */
 	@PostMapping("/addInventoryCheck")
 	public ModelAndView addInventoryCheck(AddInventoryVO AddInventory) {
 		
