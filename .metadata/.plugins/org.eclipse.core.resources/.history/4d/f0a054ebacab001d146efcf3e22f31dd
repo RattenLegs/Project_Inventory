@@ -22,7 +22,7 @@
 				</div>
 
 				<hr>
-				<%@ include file="../../views/inventoryboard/inventorySearchForm.jsp"%>
+				<%@ include file="../../views/repairboard/repairSearchForm.jsp"%>
 
 				<table class="table table-bordered">
 					<thead>
@@ -48,7 +48,7 @@
 
 				<div>
 					<p>조회</p>
-<!-- 					<button id="modalOpen">등록</button> -->
+					<button id="modalOpen">등록</button>
 					<p>수정</p>
 					<p>삭제</p>
 				</div>
@@ -70,7 +70,7 @@
                         	<li><a href="#" data-pagenum="${pc.endPage+1}">다음</a></li>
                         </c:if>
                     </ul>
-                    <button type="button" id="modalOpen" class="btn btn-info">재고등록</button>
+                    <button type="button" class="btn btn-info" onclick="location.href='<c:url value="/freeboard/freeRegist" />'">글쓰기</button>
                     </div>
                     
                     <!-- 페이지 관련 버튼(이전, 다음, 페이지번호)을 클릭 시 같이 숨겨서 보내줄 공통 값  -->

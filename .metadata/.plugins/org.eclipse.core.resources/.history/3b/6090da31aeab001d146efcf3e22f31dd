@@ -22,7 +22,7 @@
 				</div>
 
 				<hr>
-				<%@ include file="../../views/inventoryboard/inventorySearchForm.jsp"%>
+				<%@ include file="../../views/repairboard/repairSearchForm.jsp"%>
 
 				<table class="table table-bordered">
 					<thead>

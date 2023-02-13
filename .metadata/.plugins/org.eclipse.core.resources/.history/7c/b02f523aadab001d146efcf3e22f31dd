@@ -9,7 +9,7 @@
 				<input type="text" name="keyword" class="form-control search-input"
 					value="${pc.paging.keyword}"> <select
 					class="form-control search-select" name="condition">
-					<option value="hi"
+					<option value="all"
 						${pc.paging.condition == 'title' ? 'selected' : ''}>전체</option>
 					<option value="title"
 						${pc.paging.condition == 'title' ? 'selected' : ''}>접수일</option>
