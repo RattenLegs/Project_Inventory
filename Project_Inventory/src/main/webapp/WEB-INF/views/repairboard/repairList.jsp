@@ -76,7 +76,7 @@
                         	<li><a href="#" data-pagenum="${pc.endPage+1}">다음</a></li>
                         </c:if>
                     </ul>
-                    <button type="button" class="btn btn-info" onclick="location.href='<c:url value="/freeboard/freeRegist" />'">글쓰기</button>
+                    <button type="button" class="btn btn-info" onclick="location.href='<c:url value="/freeboard/freeRegist" />'">수선등록</button>
                     </div>
                     
                     <!-- 페이지 관련 버튼(이전, 다음, 페이지번호)을 클릭 시 같이 숨겨서 보내줄 공통 값  -->
