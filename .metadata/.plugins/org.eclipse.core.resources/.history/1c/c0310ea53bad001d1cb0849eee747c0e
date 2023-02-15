@@ -5,26 +5,10 @@
 	<div class="window">
 		<div class="modalyes">
 			<form action="/inventoryboard/addInventoryCheck" method="post">
-
-				 <table class="table">
-	                        <tbody class="t-control">
-	                            <tr>
-	                                <td class="t-title">남화/여화</td>
-	                                <td><input type="checkbox" name="shoeGender" value="남화"></td>
-	                                <td><input type="checkbox" name="shoeGender" value="여화"></td>
-	                            </tr>
-	                            <tr>
-	                                <td class="t-title">TITLE</td>
-	                                <td><input class="form-control input-sm" name="title"></td>
-	                            </tr>
-	                            <tr>
-	                                <td class="t-title">CONTENT</td>
-	                                <td>
-	                                <textarea class="form-control" rows="7" name="content"></textarea>
-	                                </td>                 
-	                            </tr>
-	                        </tbody>
-	                    </table>
+				<fieldset>
+					<legend>등록 양식</legend>
+					
+				</fieldset>
 
 			</form>
 			<button id="modalClose">모달 닫기</button>

@@ -9,9 +9,8 @@
 				 <table class="table">
 	                        <tbody class="t-control">
 	                            <tr>
-	                                <td class="t-title">남화/여화</td>
-	                                <td><input type="checkbox" name="shoeGender" value="남화"></td>
-	                                <td><input type="checkbox" name="shoeGender" value="여화"></td>
+	                                <td class="t-title">NAME</td>
+	                                <td><input class="form-control input-sm" name="writer" value="${login.userId}" readonly></td>
 	                            </tr>
 	                            <tr>
 	                                <td class="t-title">TITLE</td>
