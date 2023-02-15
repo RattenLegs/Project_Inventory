@@ -7,6 +7,9 @@
 <%@ include file="../../views/include/header.jsp"%>
 <title>재고관리 시스템입니다.</title>
 
+<link
+	href="${pageContext.request.contextPath}/resources/modal/modal.css"
+	rel="stylesheet">
 </head>
 <body>
 	<section>

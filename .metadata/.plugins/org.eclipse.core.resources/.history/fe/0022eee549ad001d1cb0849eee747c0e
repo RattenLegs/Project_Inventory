@@ -15,6 +15,7 @@
 						<tr>
 							<td class="t-title">남화/여화</td>
 							<td><input type="checkbox" name="shoeGender" value="남화"><input type="checkbox" name="shoeGender" value="여화"></td>
+
 						</tr>
 						<tr>
 							<td class="t-title">디자인NO</td>

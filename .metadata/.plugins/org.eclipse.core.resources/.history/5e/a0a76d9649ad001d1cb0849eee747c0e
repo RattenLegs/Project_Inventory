@@ -14,7 +14,8 @@
 					<tbody class="t-control">
 						<tr>
 							<td class="t-title">남화/여화</td>
-							<td><input type="checkbox" name="shoeGender" value="남화"><input type="checkbox" name="shoeGender" value="여화"></td>
+							<td><input type="checkbox" name="shoeGender" value="남화"></td>
+							<td><input type="checkbox" name="shoeGender" value="여화"></td>
 						</tr>
 						<tr>
 							<td class="t-title">디자인NO</td>
@@ -50,8 +51,7 @@
 				</table>
 
 			</form>
-			<button id="modalClose" class="btn btn-info" style="float:right;">모달 닫기</button>
-			<button id="modalClose" class="btn btn-info" style="float:right;">재고 등록</button>
+			<button id="modalClose" class="btn btn-info">모달 닫기</button>
 		</div>
 	</div>
 </div>
