@@ -9,7 +9,7 @@
 	<div class="window">
 		<div class="modalyes">
 			<form action="/inventoryboard/addInventoryCheck" method="post">
-				<button type="button" class="btn-close" aria-label="Close">X</button>
+				<button type="button" class="btn-close" aria-label="Close"></button>
 				<table class="table">
 					<tbody class="t-control">
 						<tr>

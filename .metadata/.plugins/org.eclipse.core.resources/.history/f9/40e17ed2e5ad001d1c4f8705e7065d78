@@ -17,6 +17,7 @@
 					<div class="titlebox">
 						<p>재 고 관 리</p>
 					</div>
+
 					<hr>
 					<%@ include
 						file="../../views/inventoryboard/inventorySearchForm.jsp"%>

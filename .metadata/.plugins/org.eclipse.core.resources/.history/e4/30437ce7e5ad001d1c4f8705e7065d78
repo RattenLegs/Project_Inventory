@@ -17,6 +17,7 @@
 					<div class="titlebox">
 						<p>재 고 관 리</p>
 					</div>
+<button type="button" class="btn-close" aria-label="Close"></button>
 					<hr>
 					<%@ include
 						file="../../views/inventoryboard/inventorySearchForm.jsp"%>

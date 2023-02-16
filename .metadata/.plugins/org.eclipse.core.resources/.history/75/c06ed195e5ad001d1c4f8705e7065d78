@@ -9,13 +9,12 @@
 	<div class="window">
 		<div class="modalyes">
 			<form action="/inventoryboard/addInventoryCheck" method="post">
-				<button type="button" class="btn-close" aria-label="Close">X</button>
+
 				<table class="table">
 					<tbody class="t-control">
 						<tr>
 							<td class="t-title">남화/여화</td>
-							<td><input type="checkbox" name="shoeGender" value="남화"><input
-								type="checkbox" name="shoeGender" value="여화"></td>
+							<td><input type="checkbox" name="shoeGender" value="남화"><input type="checkbox" name="shoeGender" value="여화"></td>
 						</tr>
 						<tr>
 							<td class="t-title">디자인NO</td>
@@ -43,7 +42,7 @@
 						</tr>
 
 						<tr>
-							<!-- 							<td class="t-title">CONTENT</td>
+<!-- 							<td class="t-title">CONTENT</td>
 							<td><textarea class="form-control" rows="7" name="content"></textarea>
 							</td>
 						</tr> -->
@@ -51,10 +50,8 @@
 				</table>
 
 			</form>
-			<button id="modalClose" class="btn btn-info" style="float: right;">모달
-				닫기</button>
-			<button id="modalClose" class="btn btn-info" style="float: right;">재고
-				등록</button>
+			<button id="modalClose" class="btn btn-info" style="float:right;">모달 닫기</button>
+			<button id="modalClose" class="btn btn-info" style="float:right;">재고 등록</button>
 		</div>
 	</div>
 </div>
