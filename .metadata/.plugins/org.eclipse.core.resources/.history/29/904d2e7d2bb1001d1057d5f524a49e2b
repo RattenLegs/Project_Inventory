@@ -24,16 +24,8 @@
 		</ul>
 		<button type="button" class="btn btn-info">재고삭제</button>
 		<button type="button" class="btn btn-info">재고수정</button>
-<!-- 모달 오픈 -->
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
-  재고등록
-</button>
+		<button type="button" id="modalOpen" class="btn btn-info">재고등록</button>
 	</div>
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> -->
 
 
 	<!-- 페이지 관련 버튼(이전, 다음, 페이지번호)을 클릭 시 같이 숨겨서 보내줄 공통 값  -->
