@@ -41,11 +41,18 @@
 						</tfoot>
 
 					</table>
-					
-					
+
+<!-- 					<select class="form-select" size="1"
+						aria-label="size 1 select example">
+						<option selected>Open this select menu</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select> -->
 					<%@ include file="../../views/inventoryboard/addInventoryForm.jsp"%>
 
-					<%@ include file="../../views/inventoryboard/inventoryModalForm.jsp"%>
+					<%@ include
+						file="../../views/inventoryboard/inventoryModalForm.jsp"%>
 				</div>
 			</div>
 		</div>

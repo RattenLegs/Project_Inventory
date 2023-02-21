@@ -23,7 +23,6 @@
 			</c:if>
 		</ul>
 		<button type="button" class="btn btn-info">재고삭제</button>
-		<button type="button" class="btn btn-info">재고수정</button>
 <!-- 모달 오픈 -->
 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
   재고등록

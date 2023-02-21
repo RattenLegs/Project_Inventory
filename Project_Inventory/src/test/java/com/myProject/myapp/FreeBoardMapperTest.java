@@ -10,7 +10,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import com.myProject.myapp.freeboard.vo.FreeBoardVO;
 import com.myProject.myapp.freeboard.mapper.IFreeBoardMapper;
 
-@WebAppConfiguration
+@WebAppConfiguration // 웹 컨텍스트 테스트 활성화
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/config/db-config.xml")
 public class freeBoardMapperTest {
@@ -29,3 +29,9 @@ public class freeBoardMapperTest {
 		}
 	}
 }
+
+
+/* 
+ * DB 가봤더니 DB는 정상작동함 그렇다면 문제는 화면과의 연결이다. 아... 그러니까
+ * 얘는 지금 내 freeboard에 연결되어 있는데 나는 음... 알거같기도?
+ */

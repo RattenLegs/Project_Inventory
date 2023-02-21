@@ -11,28 +11,18 @@
 			<option value="all"
 				${pc.paging.condition == 'title' ? 'selected' : ''}>전체</option>
 			<option value="title"
-				${pc.paging.condition == 'title' ? 'selected' : ''}>접수일</option>
+				${pc.paging.condition == 'title' ? 'selected' : ''}>남화/여화</option>
 			<option value="content"
-				${pc.paging.condition == 'content' ? 'selected' : ''}>이름</option>
+				${pc.paging.condition == 'content' ? 'selected' : ''}>디자인NO</option>
 			<option value="writer"
-				${pc.paging.condition == 'writer' ? 'selected' : ''}>연락처</option>
+				${pc.paging.condition == 'writer' ? 'selected' : ''}>색상</option>
 			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>디자인</option>
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>사이즈</option>
 			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>내용</option>
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>수량</option>
 			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>약속일</option>
-			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>매장재고일</option>
-			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>납품일</option>
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>세일가</option>
 		</select>
 	</div>
 </form>
 
-<select class="form-select" size="1" aria-label="size 1 select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
