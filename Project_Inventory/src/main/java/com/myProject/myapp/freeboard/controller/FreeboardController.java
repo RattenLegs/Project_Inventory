@@ -22,6 +22,13 @@ public class FreeboardController {
 		System.out.println("FreeboardController 생성");
 
 	}
+	/*
+	 * @GetMapping("/freeList") public void freeList() {}
+	 * 
+	 * //글쓰기 화면 처리
+	 * 
+	 * @GetMapping("/freeRegist") public void freeRegist() {}
+	 */
 	
 	@Autowired
 	private IFreeBoardService service;
@@ -88,5 +95,4 @@ public class FreeboardController {
 		return "redirect:/freeboard/freeList";
 	}
 	
-
 }
