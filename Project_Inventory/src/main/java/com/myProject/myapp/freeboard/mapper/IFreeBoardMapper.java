@@ -12,18 +12,27 @@ public interface IFreeBoardMapper {
 		
 		//글 목록
 		List<FreeBoardVO> getList(PageVO vo);
+		//getList는 PageVO를 받는다.
+		//사용자가 선택한 페이지 정보와 검색정보를 한꺼번에 받아서 처리
 		
 		//총 게시물 수
 		int getTotal(PageVO vo);
+		//총 게시물의 수 =  COUNT = 리턴타입 int
+		//검색에 따른 페이지 구현, 동적 SQL 처리
 		
 		//상세보기
 		FreeBoardVO getContent(int bno);
+		//몇번 글 상세보기인지 알려줘야 반응: int bno
+		//글 하나의 정보만 끌고오면 되니까 FreeBoardVO
+		
 		
 		//수정
 		void update(FreeBoardVO vo);
+		//수정에 필요한 정보를 알려줘야 함
 		
 		//삭제
 		void delete(int bno);
+		//리턴 없이 글번호 주면 삭제
 
 
 
