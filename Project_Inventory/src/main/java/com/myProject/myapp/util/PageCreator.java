@@ -21,7 +21,7 @@ public class PageCreator {
 	private boolean prev;
 	private boolean next;
 	
-	private final int buttonNum = 5;
+	private final int buttonNum = 5; //왜 final?
 	
 	//URI 파라미터를 쉽게 만들어 주는 유틸 메서드
 	public String makeURI(int page) {
