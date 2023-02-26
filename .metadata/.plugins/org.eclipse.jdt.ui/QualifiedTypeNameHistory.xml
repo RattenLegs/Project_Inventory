@@ -48,4 +48,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.myProject.myapp.freeboard.service.IFreeBoardService"/>
 <fullyQualifiedTypeName name="com.myProject.myapp.util.vo.PageVO"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 </qualifiedTypeNameHistroy>

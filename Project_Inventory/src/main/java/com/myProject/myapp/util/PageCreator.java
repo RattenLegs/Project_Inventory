@@ -14,6 +14,7 @@ import lombok.ToString;
 @ToString
 public class PageCreator {
 
+	
 	private PageVO paging;
 	private int articleTotalCount;
 	private int endPage;
@@ -24,6 +25,9 @@ public class PageCreator {
 	private final int buttonNum = 5; //왜 final?
 	
 	//URI 파라미터를 쉽게 만들어 주는 유틸 메서드
+	//이전 프로젝트에서는 a태그마다 파라미터값을 직접 묻혀둠, 이제는 PageCreator에 makeURI 만들어서 직접 작성하는 URL을 짧게 구현하고, 필요하다면 자바스크립트/JQUERY 적극적으로 이용
+	//직접 쓸 내용이 굉장히 많기 때문에 여러 데이터를 넘길거면 차라니 form을 이용하면 어떨까?
+	//form태그 안에 입력된 여러가지 값이 같이 넘어갈 수 있음
 	public String makeURI(int page) {
 		UriComponents ucp = UriComponentsBuilder.newInstance().queryParam("page", page)
 															  .queryParam("cpp", paging.getCpp())

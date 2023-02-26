@@ -17,6 +17,8 @@
 	<typeAliases>
 
 		<typeAlias type="com.myProject.myapp.freeboard.vo.FreeBoardVO" alias="freeboard" />
+		<typeAlias type="com.myProject.myapp.user.vo.UserVO" alias="user" />
+		<typeAlias type="com.myProject.myapp.reply.vo.ReplyVO" alias="reply" />
 		<!-- <typeAlias type="com.spring.myweb.command.UserVO" alias="user" /> 
 			<typeAlias type="com.spring.myweb.command.ReplyVO" alias="reply" /> <typeAlias 
 			type="com.spring.myweb.command.SnsBoardVO" alias="sns" /> -->

@@ -17,6 +17,7 @@
                     <hr>
                     
                     <!--form select를 가져온다 -->
+                    <!-- paging 유지 안할거니까 검색어랑 검색조건만 입력받아서 뿌려주면됨 -->
             <form action="<c:url value='/freeboard/freeList' />">
 		    		<div class="search-wrap">
                        <button type="submit" class="btn btn-info search-btn">검색</button>
@@ -62,6 +63,11 @@
 
 
                     <!--페이지 네이션을 가져옴-->
+                    <!-- PageCreator와 연계 -->
+                    <!-- 이전, 다음, 숫자가 써있는 버튼을 form으로 감싼 후, a태그의 기능을 일단 죽여놓고 사용자가 누른 버튼의 종류가 무엇인지에 따라서 사용자가 원하는 페이지 번호가 있다는 것을 확인했고 그것을 쉽게 끌고오기 위해 data-로 시작하는 속성(attribute) 지정
+                    이후 form태그의 submit 기능을 이용해 form 안의 내용을 전부 전송하기 위해 공통적으로 필요한 내용을 hidden으로 숨겨둠
+                    form에 action 경로 작성 후, 이 경로에 input hidden에 작성된 정보를 같이 보내겠다고 선언, 어떤 버튼을 눌렀냐에 따라서 pageNum은 js를 통해 바꿔줌
+                     -->
 		    <form action="<c:url value='/freeboard/freeList' />" name="pageForm">
                     <div class="text-center">
                     <hr>
@@ -97,6 +103,7 @@
 	<%@ include file="../include/footer.jsp" %>
 	
 	<script>
+	//페이지 관련 스크립트
 		$(function() {
 			
 			const msg = '${msg}';
@@ -108,7 +115,7 @@
 			//사용자가 페이지 관련 버튼을 클릭했을 때, 기존에는 각각의 a태그의 href에다가
 			//각각 다른 url을 작성해서 요청을 보내줬다면, 이번에는 클릭한 그 버튼이 무엇인지를 확인해서
 			//그 버튼에 맞는 페이지 정보를 자바스크립트로 끌고와서 요청을 보내 주겠습니다.
-			$('#pagination').on('click', 'a', function(e) {
+			$('#pagination').on('click', 'a', function(e) {//on 함수 jQuery
 				e.preventDefault(); //a태그의 고유기능 중지.
 				
 				//현재 이벤트가 발생한 요소(버튼)의
@@ -120,6 +127,7 @@
 				//페이지 버튼들을 감싸고 있는 form태그를 name으로 지목하여
 				//그 안에 숨겨져 있는 pageNum이라는 input태그의 value에
 				//위에서 얻은 data-pageNum의 값을 삽입 한 후 submit
+				//formatpageNum의 value를 얻어온 사용자가 클릭한 버튼, 그 버튼에 매겨진 page값으로 변경하고 submit 때리면 hidden으로 숨겨진 데이터도 넘어감
 				document.pageForm.pageNum.value = value;
 				document.pageForm.submit();
 				

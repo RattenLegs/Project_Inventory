@@ -63,7 +63,7 @@ public class FreeboardController {
 	}
 	
 	//글 상세보기 처리
-	@GetMapping("/freeDetail/{bno}")
+	@GetMapping("/freeDetail/{bno}") //pathvariable 방식, page 유지를 위해 pageVO를 커맨드방식으로 처리
 	public String getContent(@PathVariable int bno, 
 							@ModelAttribute("p") PageVO vo,
 							Model model) {

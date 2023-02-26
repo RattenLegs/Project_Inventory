@@ -156,10 +156,11 @@
 					return;
 				}
 				
+				//제대로 입력했다면 ajax를 통해 보냄
 				$.ajax({
 					type: 'post',
 					url: '<c:url value="/reply/replyRegist" />',
-					data: JSON.stringify(
+					data: JSON.stringify(//자바스크립트의 객체를 JSON 형태로 변경
 						{
 							"bno": bno,
 							"reply": reply,

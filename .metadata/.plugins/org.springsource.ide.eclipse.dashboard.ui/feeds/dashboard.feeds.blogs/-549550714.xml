@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Feb 2023 14:12:24 GMT</lastBuildDate><item><title><![CDATA[Spring Cloud Function for Azure Function]]></title><link>https://spring.io/blog/2023/02/24/spring-cloud-function-for-azure-function</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-cloud-function-for-azure-function</guid><dc:creator><![CDATA[Christian Tzolov]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is the Spring Cloud Function?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Feb 2023 22:09:01 GMT</lastBuildDate><item><title><![CDATA[Spring Modulith 0.4.1 released]]></title><link>https://spring.io/blog/2023/02/24/spring-modulith-0-4-1-released</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-modulith-0-4-1-released</guid><dc:creator><![CDATA[Oliver Drotbohm]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&quot;If it&apos;s fun, do it more often&quot; or so they say. Unfortunately, the &lt;a href=&quot;https://spring.io/blog/2023/02/24/spring-modulith-0-4-released&quot;&gt;just announced 0.4 release&lt;/a&gt; of Spring Modulith shipped a tiny glitch we could fix rather quickly, to immediately issue a 0.4.1 one. We were also able to sneak in an additional dependency upgrade to the just released jMolecules 2022.2.3.&lt;/p&gt;
+&lt;p&gt;Find a complete change log in the &lt;a href=&quot;https://github.com/spring-projects-experimental/spring-modulith/releases/tag/0.4.1&quot;&gt;GitHub release page&lt;/a&gt;. We are looking forward to your feedback in the &lt;a href=&quot;https://github.com/spring-projects-experimental/spring-modulith/discussions&quot;&gt;GitHub discussions&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Cloud 2021.0.6 has been released]]></title><link>https://spring.io/blog/2023/02/24/spring-cloud-2021-0-6-has-been-released</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-cloud-2021-0-6-has-been-released</guid><dc:creator><![CDATA[Oleg Zhurakousky]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the community, I am pleased to announce that the General Availability (RELEASE) of the &lt;a href=&quot;https://cloud.spring.io&quot;&gt;Spring Cloud 2021.0.6&lt;/a&gt; Release Train is available today. The release can be found in &lt;a href=&quot;https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-dependencies/2021.0.6/&quot;&gt;Maven Central&lt;/a&gt;. You can check out the 2021.0.6 &lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2021.0-Release-Notes&quot;&gt;release notes for more information&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Notable Changes in the 2021.0.6 Release Train&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://github.com/orgs/spring-cloud/projects/102&quot;&gt;project page&lt;/a&gt; for all the issues and pull requests included in this release.&lt;/p&gt;
+&lt;h3&gt;Spring Cloud Commons&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add utility method to configure zone-preference load-balancing with user-provided zone (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-commons/pull/1174&quot;&gt;#1174&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Netflix&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow setting timeouts for fetching instances (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-netflix/issues/4110&quot;&gt;#4110&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Gateway&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed memory leak in CacheRequestBodyGatewayFilter(&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-gateway/pull/2842&quot;&gt;2842&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Kubernetes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use SSL When secured annotation is true (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-kubernetes/issues/1141&quot;&gt;#1141&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud OpenFeign&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow configuring request timeout for Apache HttpClient (&lt;a href=&quot;https://github.com/spring-cloud/spring-cloud-openfeign/issues/799&quot;&gt;#799&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Stream&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhancements around custom Routing Functions to ensure they do not create output binding (similar to the provided one)&lt;/li&gt;
+&lt;li&gt;Consolidate core bean propagation between parent/child contexts in the case of multi-binder scenarios&lt;/li&gt;
+&lt;li&gt;Few bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Spring Cloud Function&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Several improvements and bug fixes primarily around AWS Lambda support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following modules were updated as part of 2021.0.6:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Module&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Netflix&lt;/td&gt;
+&lt;td&gt;3.1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Config&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Build&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Sleuth&lt;/td&gt;
+&lt;td&gt;3.1.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Gateway&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Starter Build&lt;/td&gt;
+&lt;td&gt;2021.0.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Consul&lt;/td&gt;
+&lt;td&gt;3.1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Contract&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Vault&lt;/td&gt;
+&lt;td&gt;3.1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Kubernetes&lt;/td&gt;
+&lt;td&gt;2.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Zookeeper&lt;/td&gt;
+&lt;td&gt;3.1.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Task&lt;/td&gt;
+&lt;td&gt;2.4.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Openfeign&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Circuitbreaker&lt;/td&gt;
+&lt;td&gt;2.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Stream&lt;/td&gt;
+&lt;td&gt;3.2.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Commons&lt;/td&gt;
+&lt;td&gt;3.1.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Spring Cloud Function&lt;/td&gt;
+&lt;td&gt;3.2.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As always, we welcome feedback on &lt;a href=&quot;https://github.com/spring-cloud/&quot;&gt;GitHub&lt;/a&gt;, on &lt;a href=&quot;https://gitter.im/spring-cloud/spring-cloud&quot;&gt;Gitter&lt;/a&gt;, on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-cloud&quot;&gt;Stack Overflow&lt;/a&gt;, and on &lt;a href=&quot;https://twitter.com/SpringCloud&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To get started with Maven with a BOM (dependency management only):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;#x3C;dependencyManagement&gt;
+    &amp;#x3C;dependencies&gt;
+        &amp;#x3C;dependency&gt;
+            &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+            &amp;#x3C;artifactId&gt;spring-cloud-dependencies&amp;#x3C;/artifactId&gt;
+            &amp;#x3C;version&gt;2021.0.6&amp;#x3C;/version&gt;
+            &amp;#x3C;type&gt;pom&amp;#x3C;/type&gt;
+            &amp;#x3C;scope&gt;import&amp;#x3C;/scope&gt;
+        &amp;#x3C;/dependency&gt;
+    &amp;#x3C;/dependencies&gt;
+&amp;#x3C;/dependencyManagement&gt;
+&amp;#x3C;dependencies&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-config&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    &amp;#x3C;dependency&gt;
+        &amp;#x3C;groupId&gt;org.springframework.cloud&amp;#x3C;/groupId&gt;
+        &amp;#x3C;artifactId&gt;spring-cloud-starter-netflix-eureka-client&amp;#x3C;/artifactId&gt;
+    &amp;#x3C;/dependency&gt;
+    ...
+&amp;#x3C;/dependencies&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or with Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-groovy&quot;&gt;plugins {
+  id &apos;java&apos;
+  id &apos;org.springframework.boot&apos; version &apos;2.7.9&apos;
+  id &apos;io.spring.dependency-management&apos; version &apos;1.0.15.RELEASE&apos;
+}
+
+group = &apos;com.example&apos;
+version = &apos;0.0.1-SNAPSHOT&apos;
+sourceCompatibility = &apos;8&apos;
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  set(&apos;springCloudVersion&apos;, &quot;2021.0.6&quot;)
+}
+
+dependencies {
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-config&apos;
+  implementation &apos;org.springframework.cloud:spring-cloud-starter-netflix-eureka-client&apos;
+  //...
+}
+
+dependencyManagement {
+  imports {
+    mavenBom &quot;org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Spring Cloud Function for Azure Function]]></title><link>https://spring.io/blog/2023/02/24/spring-cloud-function-for-azure-function</link><guid isPermaLink="true">https://spring.io/blog/2023/02/24/spring-cloud-function-for-azure-function</guid><dc:creator><![CDATA[Christian Tzolov]]></dc:creator><pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is the Spring Cloud Function?&lt;/h2&gt;
 &lt;p&gt;Spring Cloud Function is a SpringBoot-based framework allowing users to concentrate on their business logic by implementing them as Java Functions (i.e., Supplier, Function, Consumer). In turn the framework provides necessary abstraction to enable execution of these functions in various environments (e.g., REST, Streaming) as well as serverless environments such as AWS Lambda or Azure Functions, without having to worry about the underlying platform-specific details. This allows developers to focus on writing their business logic and let the framework handle the rest.&lt;/p&gt;
 &lt;p&gt;Spring Cloud Function uses the &lt;code&gt;java.util.function.Function/Supplier/Consumer&lt;/code&gt; Interfaces as building blocks for defining the structure of the function, including the input and output types.&lt;/p&gt;
 &lt;p&gt;Here&apos;s a simple example of a Spring Cloud Function that takes in a string and returns the string in uppercase:&lt;/p&gt;
@@ -286,11 +454,4 @@ public class UppercaseHandler {
 &lt;p&gt;These patch releases come with a number of bug fixes, enhancements, and dependency updates. For more details about the changes, please refer to the change logs: &lt;a href=&quot;https://github.com/spring-projects/spring-batch/releases/tag/v5.0.1&quot;&gt;5.0.1&lt;/a&gt; and &lt;a href=&quot;https://github.com/spring-projects/spring-batch/releases/tag/4.3.8&quot;&gt;4.3.8&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;These versions will be shipped with Spring Boot 3.0.3 and 2.7.9 respectively. I would like to thank all contributors who had a role in these releases! We look forward to your feedback on &lt;a href=&quot;https://github.com/spring-projects/spring-batch/issues&quot;&gt;Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/springbatch&quot;&gt;Twitter&lt;/a&gt;, and &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-batch&quot;&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-batch&quot;&gt;Spring Batch Home&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-batch&quot;&gt;Source on Github&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-batch/docs/5.0.1/reference/html/index.html&quot;&gt;Reference documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Authorization Server 1.1.0-M1 available now]]></title><link>https://spring.io/blog/2023/02/22/spring-authorization-server-1-1-0-m1-available-now</link><guid isPermaLink="true">https://spring.io/blog/2023/02/22/spring-authorization-server-1-1-0-m1-available-now</guid><dc:creator><![CDATA[Joe Grandja]]></dc:creator><pubDate>Wed, 22 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 1.1.0-M1.&lt;/p&gt;
-&lt;p&gt;The main feature delivered in this release is support for OpenID Connect 1.0 Logout (&lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/pull/1068&quot;&gt;gh-1068&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;See the &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/releases/tag/1.1.0-M1&quot;&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href=&quot;https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html&quot;&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/tree/main/samples&quot;&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-authorization-server&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/issues&quot;&gt;GitHub Issues&lt;/a&gt; | &lt;a href=&quot;https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165&quot;&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Authorization Server 1.0.1 and 0.4.1 available now]]></title><link>https://spring.io/blog/2023/02/22/spring-authorization-server-1-0-1-and-0-4-1-available-now</link><guid isPermaLink="true">https://spring.io/blog/2023/02/22/spring-authorization-server-1-0-1-and-0-4-1-available-now</guid><dc:creator><![CDATA[Joe Grandja]]></dc:creator><pubDate>Wed, 22 Feb 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 1.0.1 and 0.4.1.&lt;/p&gt;
-&lt;p&gt;See the &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/releases/tag/1.0.1&quot;&gt;1.0.1&lt;/a&gt; and &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/releases/tag/0.4.1&quot;&gt;0.4.1&lt;/a&gt; release notes for complete details.&lt;/p&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href=&quot;https://docs.spring.io/spring-authorization-server/docs/current/reference/html/getting-started.html&quot;&gt;Getting Started&lt;/a&gt; chapter of the reference documentation and the &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/tree/1.0.x/samples&quot;&gt;samples&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-authorization-server&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-authorization-server/issues&quot;&gt;GitHub Issues&lt;/a&gt; | &lt;a href=&quot;https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165&quot;&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-batch&quot;&gt;Spring Batch Home&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-batch&quot;&gt;Source on Github&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-batch/docs/5.0.1/reference/html/index.html&quot;&gt;Reference documentation&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
