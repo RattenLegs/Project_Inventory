@@ -1,13 +1,12 @@
 package com.myProject.myapp.inventory.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.myProject.myapp.inventory.vo.AddInventoryVO;
+import com.myProject.myapp.inventory.vo.InventoryVO;
 
 @Controller
 @RequestMapping("/inventoryboard")
@@ -28,31 +27,29 @@ public class InventoryController {
 	 * @GetMapping("/addInventory") public String addInventory() {
 	 * System.out.println("재고등록으로 이동"); return "/inventoryboard/addInventory"; }
 	 */
-	@PostMapping("/addInventoryCheck")
-	public ModelAndView addInventoryCheck(AddInventoryVO AddInventory) {
-		
-		ModelAndView mv = new ModelAndView();
-		mv.addObject("shoeGender", AddInventory.getshoeGender());
-		mv.addObject("design", AddInventory.getdesign());
-		mv.addObject("color", AddInventory.getcolor());
-		mv.addObject("size", AddInventory.getsize());
-		mv.addObject("num", AddInventory.getnum());
-		mv.addObject("price", AddInventory.getprice());
-		mv.addObject("sum", AddInventory.getsum());
-		mv.setViewName("/inventoryboard/addInventoryCheck");
-		
-		System.out.println("인벤토리 전송");
-		System.out.println(AddInventory.getshoeGender());
-		System.out.println(AddInventory.getdesign());
-		System.out.println(AddInventory.getcolor());
-		System.out.println(AddInventory.getsize());
-		System.out.println(AddInventory.getnum());
-		System.out.println(AddInventory.getprice());		
-		System.out.println(AddInventory.getsum());	
-		
-		return mv;
-	}
-
+	/*
+	 * @PostMapping("/addInventoryCheck") public ModelAndView
+	 * addInventoryCheck(AddInventoryVO AddInventory) {
+	 * 
+	 * ModelAndView mv = new ModelAndView(); mv.addObject("shoeGender",
+	 * AddInventory.getshoeGender()); mv.addObject("design",
+	 * AddInventory.getdesign()); mv.addObject("color", AddInventory.getcolor());
+	 * mv.addObject("size", AddInventory.getsize()); mv.addObject("num",
+	 * AddInventory.getnum()); mv.addObject("price", AddInventory.getprice());
+	 * mv.addObject("sum", AddInventory.getsum());
+	 * mv.setViewName("/inventoryboard/addInventoryCheck");
+	 * 
+	 * System.out.println("인벤토리 전송");
+	 * System.out.println(AddInventory.getshoeGender());
+	 * System.out.println(AddInventory.getdesign());
+	 * System.out.println(AddInventory.getcolor());
+	 * System.out.println(AddInventory.getsize());
+	 * System.out.println(AddInventory.getnum());
+	 * System.out.println(AddInventory.getprice());
+	 * System.out.println(AddInventory.getsum());
+	 * 
+	 * return mv; }
+	 */
 	
 }
 
