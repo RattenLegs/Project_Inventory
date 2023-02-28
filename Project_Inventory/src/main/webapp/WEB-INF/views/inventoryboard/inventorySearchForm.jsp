@@ -6,8 +6,9 @@
 <form action="<c:url value='/inventoryboard/inventoryList' />">
 	<div class="search-wrap">
 		<button type="submit" class="btn btn-info search-btn">검색</button>
-		<input type="text" name="keyword" class="form-control search-input" value="${pc.paging.keyword}"> 
-		<select class="form-control search-select" name="condition">
+		<input type="text" name="keyword" class="form-control search-input"
+			value="${pc.paging.keyword}"> <select
+			class="form-control search-select" name="condition">
 			<option value="all"
 				${pc.paging.condition == 'title' ? 'selected' : ''}>전체</option>
 			<option value="title"
@@ -21,7 +22,11 @@
 			<option value="titleContent"
 				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>수량</option>
 			<option value="titleContent"
-				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>세일가</option>
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>가격</option>
+			<option value="titleContent"
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>할인율</option>
+			<option value="titleContent"
+				${pc.paging.condition == 'titleContent' ? 'selected' : ''}>할인가</option>
 		</select>
 	</div>
 </form>

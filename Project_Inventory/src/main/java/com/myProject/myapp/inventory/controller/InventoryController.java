@@ -1,12 +1,8 @@
 package com.myProject.myapp.inventory.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.myProject.myapp.inventory.vo.InventoryVO;
 
 @Controller
 @RequestMapping("/inventoryboard")
@@ -23,6 +19,8 @@ public class InventoryController {
 		return "/inventoryboard/inventoryList";
 	}
 
+	
+	
 	/*
 	 * @GetMapping("/addInventory") public String addInventory() {
 	 * System.out.println("재고등록으로 이동"); return "/inventoryboard/addInventory"; }

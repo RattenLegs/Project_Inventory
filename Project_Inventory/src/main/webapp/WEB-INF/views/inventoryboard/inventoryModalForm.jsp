@@ -35,11 +35,11 @@
 							</tr>
 							<tr>
 								<td class="t-title">사이즈</td>
-								<td><input class="form-control input-sm" name="size"></td>
+								<td><input class="form-control input-sm" name="shoeSize"></td>
 							</tr>
 							<tr>
 								<td class="t-title">수량</td>
-								<td><input class="form-control input-sm" name="num"></td>
+								<td><input class="form-control input-sm" name="shoeNum"></td>
 							</tr>
 							<tr>
 								<td class="t-title">가격</td>
