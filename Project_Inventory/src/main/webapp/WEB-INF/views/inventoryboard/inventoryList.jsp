@@ -45,9 +45,9 @@
 							<c:forEach var="vo" items="${boardList}">
 								<tr>
 									<td>${vo.bno}</td>
-									<td><a
-										href="<c:url value='/freeboard/freeDetail/${vo.bno}${pc.makeURI(pc.paging.pageNum)}' />">${vo.title}</a>
-										&nbsp;&nbsp;&nbsp; <c:if test="${vo.newMark}">
+									<td><a href="<c:url value='/inventoryboard/inventoryList/${vo.bno}${pc.makeURI(pc.paging.pageNum)}' />">${vo.title}</a>
+										&nbsp;&nbsp;&nbsp; 
+										<c:if test="${vo.newMark}">
 											<img alt="newMark" src="<c:url value='/img/icon_new.gif' />">
 										</c:if></td>
 									<td>${vo.writer}</td>

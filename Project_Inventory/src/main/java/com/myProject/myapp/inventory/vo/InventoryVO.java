@@ -1,5 +1,7 @@
 package com.myProject.myapp.inventory.vo;
 
+import java.sql.Timestamp;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -37,11 +39,12 @@ public class InventoryVO {
 	private String shoeGender;
 	private String design;
 	private String color;
-	private String shoeSize;
-	private String shoeNum;
-	private String price;
-	private String salePercent;
-	private String sale;
-	private String regdate;
-	private String updatedate;
+	private int shoeSize;
+	private int shoeNum;
+	private int price;
+	private int salePercent;
+	private int sale;
+	private Timestamp regdate;
+	private Timestamp updatedate;
+	private boolean newMark;
 }

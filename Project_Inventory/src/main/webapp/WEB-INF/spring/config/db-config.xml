@@ -61,6 +61,8 @@
 		base-package="com.myProject.myapp.user.mapper" />
 	<mybatis-spring:scan
 		base-package="com.myProject.myapp.reply.mapper" />
+			<mybatis-spring:scan
+		base-package="com.myProject.myapp.inventory.mapper" />
 	<!-- <mybatis-spring:scan base-package="com.spring.myweb.reply.mapper"/> 
 		<mybatis-spring:scan base-package="com.spring.myweb.user.mapper"/> <mybatis-spring:scan 
 		base-package="com.spring.myweb.snsboard.mapper"/> -->

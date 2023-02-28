@@ -23,8 +23,8 @@
 	</sql> -->
 
 	<insert id="regist">
-		INSERT INTO inventory(bno, shoeGender, design, color, shoeSize, shoeNum, price, salePercent, sale)
-		VALUES(freeboard_seq.NEXTVAL, #{shoeGender}, #{design}, #{color}, #{shoeSize}, #{shoeNum}, #{price}, #{salePercent}, #{sale})
+		INSERT INTO inventoryList(bno, shoeGender, design, color, shoeSize, shoeNum, price, salePercent, sale)
+		VALUES(inventoryList_seq.NEXTVAL, #{shoeGender}, #{design}, #{color}, #{shoeSize}, #{shoeNum}, #{price}, #{salePercent}, #{sale})
 	</insert>
 
 
