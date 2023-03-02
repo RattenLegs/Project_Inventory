@@ -27,7 +27,6 @@
 					<table class="table table-bordered">
 						<thead>
 							<tr>
-								<th>구분</th>
 								<th>번호</th>
 								<th>남화/여화</th>
 								<th>디자인NO</th>
@@ -45,12 +44,19 @@
 							<c:forEach var="vo" items="${boardList}">
 								<tr>
 									<td>${vo.bno}</td>
-									<td><a href="<c:url value='/inventoryboard/inventoryList/${vo.bno}${pc.makeURI(pc.paging.pageNum)}' />">${vo.title}</a>
+									<td>
+										<a href="<c:url value='/inventoryboard/inventoryList/${vo.bno}${pc.makeURI(pc.paging.pageNum)}' />">${vo.shoeGender}</a>
 										&nbsp;&nbsp;&nbsp; 
 										<c:if test="${vo.newMark}">
 											<img alt="newMark" src="<c:url value='/img/icon_new.gif' />">
 										</c:if></td>
-									<td>${vo.writer}</td>
+									<td>${vo.design}</td>
+									<td>${vo.color}</td>
+									<td>${vo.shoeSize}</td>
+									<td>${vo.shoeNum}</td>
+									<td>${vo.price}</td>
+									<td>${vo.salePercent}</td>
+									<td>${vo.sale}</td>
 									<td><fmt:formatDate value="${vo.regDate}"
 											pattern="yyyy-MM-dd HH:mm" /></td>
 									<td><fmt:formatDate value="${vo.updateDate}"
@@ -87,64 +93,38 @@
 	src="${pageContext.request.contextPath}/resources/modal/modal.js"></script>
 
 <script>
+//페이지 관련 스크립트
+$(function() {
+	
 	const msg = '${msg}';
-	if (msg !== '') {
+	if(msg !== '') {
 		alert(msg);
 	}
-
-	$(document).ready(function() {
-
-		$('#replyRegist').click(function() {
-
-			/*
-			댓글을 등록하려면 게시글 번호도 보내 주셔야 합니다.
-			댓글 내용, 작성자, 댓글 비밀번호, 게시글 번호를 
-			json 표기 방법으로 하나로 모아서 전달해 주시면 됩니다.
-			비동기 통신으로 댓글 삽입을 처리해 주시고,
-			console.log를 통해 '댓글 등록 완료!'를 확인하시고
-			실제 DB에 댓글이 추가되는지도 확인해 주세요.
-			전송방식: POST, url: /reply/replyRegist
-			 */
-
-			const bno = '${article.bno}'; //컨트롤러에서 넘어온 게시글 번호
-			const reply = $('#reply').val(); //댓글 내용
-			const replyId = $('#replyId').val(); //작성자
-			const replyPw = $('#replyPw').val(); //비밀번호
-
-			if (reply === '' || replyId === '' || replyPw === '') {
-				alert('이름, 비밀번호, 내용을 입력하세요!');
-				return;
-			}
-
-			//제대로 입력했다면 ajax를 통해 보냄
-			$.ajax({
-				type : 'post',
-				url : '<c:url value="/reply/replyRegist" />',
-				data : JSON.stringify(//자바스크립트의 객체를 JSON 형태로 변경
-				{
-					"bno" : bno,
-					"reply" : reply,
-					"replyId" : replyId,
-					"replyPw" : replyPw
-				}),
-				dataType : 'text', //서버로부터 어떤 형식으로 받을지 (text는 생략 가능.)
-				contentType : 'application/json',
-				success : function(data) {
-					console.log('통신 성공!: ' + data);
-					$('#reply').val('');
-					$('#replyId').val('');
-					$('#replyPw').val('');
-					//등록 완료 후 댓글 목록 함수를 호출해서 비동기식으로 목록 표현.
-					getList(1, true);
-				},
-				error : function() {
-					alert('등록에 실패했습니다. 관리자에게 문의하세요!');
-				}
-			}); //댓글 등록 비동기 통신 끝.
-
-		}); //댓글 등록 이벤트 끝.
-
-	}); // end jQuery
+	
+	
+	//사용자가 페이지 관련 버튼을 클릭했을 때, 기존에는 각각의 a태그의 href에다가
+	//각각 다른 url을 작성해서 요청을 보내줬다면, 이번에는 클릭한 그 버튼이 무엇인지를 확인해서
+	//그 버튼에 맞는 페이지 정보를 자바스크립트로 끌고와서 요청을 보내 주겠습니다.
+	$('#pagination').on('click', 'a', function(e) {//on 함수 jQuery
+		e.preventDefault(); //a태그의 고유기능 중지.
+		
+		//현재 이벤트가 발생한 요소(버튼)의
+		//data-pageNum의 값을 얻어서 변수에 저장.
+		//const value = e.target.dataset.pagenum; -> Vanilla JS 
+		const value = $(this).data('pagenum'); // -> jQuery
+		console.log(value);
+		
+		//페이지 버튼들을 감싸고 있는 form태그를 name으로 지목하여
+		//그 안에 숨겨져 있는 pageNum이라는 input태그의 value에
+		//위에서 얻은 data-pageNum의 값을 삽입 한 후 submit
+		//formatpageNum의 value를 얻어온 사용자가 클릭한 버튼, 그 버튼에 매겨진 page값으로 변경하고 submit 때리면 hidden으로 숨겨진 데이터도 넘어감
+		document.pageForm.pageNum.value = value;
+		document.pageForm.submit();
+		
+	});
+	
+	
+}); //end jQuery
 </script>
 
 </html>

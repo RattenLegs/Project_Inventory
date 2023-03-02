@@ -1,8 +1,13 @@
 package com.myProject.myapp.inventory.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import com.myProject.myapp.inventory.service.IInventoryService;
+import com.myProject.myapp.util.PageCreator;
+import com.myProject.myapp.util.vo.PageVO;
 
 @Controller
 @RequestMapping("/inventoryboard")
@@ -13,9 +18,24 @@ public class InventoryController {
 
 	}
 
-	@RequestMapping(value = "/inventoryList", method = RequestMethod.GET)
-	public String inventoryList() {
+	@Autowired
+	private IInventoryService service;
+	
+	@GetMapping("/inventoryList")
+	public String inventoryList(PageVO vo, Model model) {
 		System.out.println("재고로 이동");
+		
+		System.out.println(vo);
+		
+		PageCreator pc = new PageCreator();
+		pc.setPaging(vo);
+		pc.setArticleTotalCount(service.getTotal(vo));
+		
+		System.out.println(pc);
+		
+		model.addAttribute("boardList", service.getList(vo));
+		model.addAttribute("pc", pc);		
+		
 		return "/inventoryboard/inventoryList";
 	}
 

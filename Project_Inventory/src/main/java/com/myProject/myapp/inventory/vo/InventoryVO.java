@@ -44,7 +44,7 @@ public class InventoryVO {
 	private int price;
 	private int salePercent;
 	private int sale;
-	private Timestamp regdate;
-	private Timestamp updatedate;
+	private Timestamp regDate;
+	private Timestamp updateDate;
 	private boolean newMark;
 }

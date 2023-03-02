@@ -5,22 +5,22 @@
 
 <mapper namespace="com.myProject.myapp.inventory.mapper.IInventoryMapper">
 
-<!-- 	<sql id="search">
-		<if test="condition == 'title'">
-			WHERE title LIKE '%'||#{keyword}||'%'
+ 	<sql id="search">
+		<if test="condition == 'shoeGender'">
+			WHERE shoeGender LIKE '%'||#{keyword}||'%'
 		</if>
-		<if test="condition == 'content'">
-			WHERE content LIKE '%'||#{keyword}||'%'
+		<if test="condition == 'design'">
+			WHERE design LIKE '%'||#{keyword}||'%'
 		</if>
-		<if test="condition == 'writer'">
-			WHERE writer LIKE '%'||#{keyword}||'%'
+		<if test="condition == 'color'">
+			WHERE color LIKE '%'||#{keyword}||'%'
 		</if>
-		<if test="condition == 'titleContent'">
+<!-- 		<if test="condition == 'shoeSize'">
 			WHERE title LIKE '%'||#{keyword}||'%'
 			OR content LIKE
 			'%'||#{keyword}||'%'
-		</if>
-	</sql> -->
+		</if> -->
+	</sql> 
 
 	<insert id="regist">
 		INSERT INTO inventoryList(bno, shoeGender, design, color, shoeSize, shoeNum, price, salePercent, sale)
@@ -28,12 +28,12 @@
 	</insert>
 
 
-	<!-- <select id="getList" resultType="freeboard">resulttype과 config의 typeAlias 맞추기
+	 <select id="getList" resultType="inventory"><!-- resulttype과 config의 typeAlias 맞추기 -->
 		SELECT * FROM
 		(
 		SELECT ROWNUM AS rn, tbl.* FROM
 		(
-		SELECT * FROM freeboard
+		SELECT * FROM inventorylist
 		<include refid="search" />
 		ORDER BY bno DESC
 		) tbl
@@ -46,11 +46,11 @@
 
 	<select id="getTotal" resultType="int">
 		SELECT COUNT(*)
-		FROM freeboard
+		FROM inventorylist
 		<include refid="search" />
 	</select>
 
-	<select id="getContent" resultType="freeboard">
+<!-- 	<select id="getContent" resultType="freeboard">
 		SELECT * FROM freeboard
 		WHERE
 		bno=#{bno}
@@ -66,8 +66,8 @@
 	<delete id="delete">
 		DELETE FROM freeboard
 		WHERE bno = #{bno}
-	</delete> -->
-
+	</delete> 
+ -->
 </mapper>
 
 
