@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.myProject.myapp.inventory.service.IInventoryService;
 import com.myProject.myapp.util.PageCreator;
@@ -40,6 +42,11 @@ public class InventoryController {
 	}
 
 	
+	@GetMapping("/inventoryDetail/{bno}")
+	public String inventoryDetail(@PathVariable int bno, @ModelAttribute("p") PageVO vo, Model model) {//왜 이렇게 한걸까?
+		model.addAttribute("article", service.getContent(bno));
+		return "inventoryboard/inventoryDetail";
+	}
 	
 	/*
 	 * @GetMapping("/addInventory") public String addInventory() {

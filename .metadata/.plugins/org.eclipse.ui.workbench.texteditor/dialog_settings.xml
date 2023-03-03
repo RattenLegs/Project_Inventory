@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="Inventory"/>
 		<list key="findhistory">
+			<item value="FreeBoard"/>
 			<item value=".background"/>
 			<item value="background"/>
 			<item value="jdbc"/>
@@ -23,6 +24,7 @@
 			<item value="addDesign"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Inventory"/>
 			<item value="sum"/>
 			<item value="price"/>
 			<item value="num"/>

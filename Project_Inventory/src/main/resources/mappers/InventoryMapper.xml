@@ -50,12 +50,12 @@
 		<include refid="search" />
 	</select>
 
-<!-- 	<select id="getContent" resultType="freeboard">
-		SELECT * FROM freeboard
+	<select id="getContent" resultType="inventory">
+		SELECT * FROM inventorylist
 		WHERE
 		bno=#{bno}
 	</select>
-
+<!-- 
 	<update id="update">
 		UPDATE freeboard
 		SET title=#{title},

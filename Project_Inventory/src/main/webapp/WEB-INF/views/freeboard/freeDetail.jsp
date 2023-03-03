@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
     
     <%@ include file="../include/header.jsp" %>
+	<title>상세보기 페이지입니다.</title>
 
     <section>
         <div class="container">

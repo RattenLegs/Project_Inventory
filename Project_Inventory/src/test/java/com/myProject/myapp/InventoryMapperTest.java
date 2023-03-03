@@ -24,14 +24,14 @@ public class InventoryMapperTest {
 		public void registTest() {
 			for (int i = 1; i <= 30; i++) {
 				InventoryVO vo = new InventoryVO();
-				vo.setShoeGender("남화");
-				vo.setDesign("1357");
-				vo.setColor("black");
-				vo.setShoeSize(i*10);
+				vo.setShoeGender("남화"); //홀수=남화, 짝수=여화
+				vo.setDesign("1357"); //랜덤번호 받아서 사용
+				vo.setColor("black"); //black, brown, navy 등
+				vo.setShoeSize(i*10); // 250~300 랜덤
 				vo.setShoeNum(i);
 				vo.setPrice(i*1000+100);
-				vo.setSalePercent(30);
-				vo.setSale(i);
+				vo.setSalePercent(30); //홀수=30, 짝수=40
+				vo.setSale(i); // salePrice/100*(100-salePercent)
 				mapper.regist(vo);
 			}
 		}
