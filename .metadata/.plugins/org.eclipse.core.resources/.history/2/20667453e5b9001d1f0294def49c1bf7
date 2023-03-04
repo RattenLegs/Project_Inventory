@@ -64,7 +64,7 @@
 				</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" id="addInventory" class="btn btn-primary addInventorylist">재고
+				<button type="button" class="btn btn-primary addInventorylist">재고
 					등록</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">모달
 					닫기</button>
@@ -75,10 +75,6 @@
 </div>
 
 <script>
-$(document).ready(function(){
-	$('#addInventory').click(function(){
-		alert('잘됨');
-	});
-}); //end jQuery
+
 
 </script>

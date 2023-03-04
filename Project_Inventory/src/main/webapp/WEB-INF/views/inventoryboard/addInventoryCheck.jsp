@@ -29,3 +29,4 @@ function goInventoryList(){
 
 </html>
 
+<!-- 안쓰고 있음 -->

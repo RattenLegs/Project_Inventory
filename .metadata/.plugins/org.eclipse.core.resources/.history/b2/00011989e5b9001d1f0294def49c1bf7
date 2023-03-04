@@ -75,10 +75,6 @@
 </div>
 
 <script>
-$(document).ready(function(){
-	$('#addInventory').click(function(){
-		alert('잘됨');
-	});
-}); //end jQuery
+
 
 </script>
