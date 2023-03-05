@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.myProject.myapp.inventory.service.IInventoryService;
 import com.myProject.myapp.util.PageCreator;
@@ -48,8 +47,6 @@ public class InventoryController {
 		model.addAttribute("article", service.getContent(bno));
 		return "inventoryboard/inventoryDetail";
 	}
-	
-	/* @RequestBody */
 	
 	/*
 	 * @GetMapping("/addInventory") public String addInventory() {
