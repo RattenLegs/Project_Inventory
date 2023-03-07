@@ -6,15 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Inventory"/>
+		<item key="selection" value="junit"/>
 		<list key="findhistory">
+			<item value="junit"/>
 			<item value="FreeBoard"/>
 			<item value=".background"/>
 			<item value="background"/>
 			<item value="jdbc"/>
 			<item value="oracle"/>
 			<item value="jstl"/>
-			<item value="junit"/>
 			<item value="test"/>
 			<item value="addSum"/>
 			<item value="addPrice"/>
