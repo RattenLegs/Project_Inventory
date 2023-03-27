@@ -1,5 +1,0 @@
-package com.myProject.myapp.inventory.mapper;
-
-public interface IInventoryMapper {
-
-}
